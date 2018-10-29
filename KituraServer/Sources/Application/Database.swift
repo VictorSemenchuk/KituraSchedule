@@ -11,4 +11,5 @@ class KTDatabase {
     static let reasonsTable = ReasonsTable()
     static let colorsTable = ColorsTable()
     static let recordsTable = RecordsTable()
+    static let usersTable = UsersTable()
 }

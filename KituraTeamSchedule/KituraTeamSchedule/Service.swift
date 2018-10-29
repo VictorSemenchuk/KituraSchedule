@@ -42,6 +42,7 @@ class Service {
             })
         }
     }
+
     
     static func getReasons() {
         guard let client = KituraKit(baseURL: "http://EPBYMINW4879:8080") else {
@@ -56,6 +57,47 @@ class Service {
             reasons.forEach({ (reason) in
                 print(reason)
             })
+        }
+    }
+    
+    
+    ////records
+    
+    static func addRecord(record: Record) {
+        guard let client = KituraKit(baseURL: "http://EPBYMINW4879:8080") else {
+            print("Error creating KituraKit client")
+            return
+        }
+        client.post("/addrecord", data: record) { (insertedRecord: Record?, error: RequestError?) in
+            print("Inserted")
+        }
+    }
+    
+    static func updateRecord(record: Record) {
+        guard let client = KituraKit(baseURL: "http://EPBYMINW4879:8080") else {
+            print("Error creating KituraKit client")
+            return
+        }
+        client.post("/updaterecord", data: record) { (updatedRecord: Record?, error: RequestError?) in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                print("Updated")
+            }
+        }
+    }
+    
+    static func removeRecord(record: Record) {
+        guard let client = KituraKit(baseURL: "http://EPBYMINW4879:8080") else {
+            print("Error creating KituraKit client")
+            return
+        }
+        client.post("/removerecord", data: record) { (updatedRecord: Record?, error: RequestError?) in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                print("Removed")
+            }
         }
     }
     

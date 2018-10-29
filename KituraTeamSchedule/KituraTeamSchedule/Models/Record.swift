@@ -8,7 +8,7 @@
 import Foundation
 
 struct Record: Codable {
-    var id: Int
+    var recordId: Int
     var userId: Int
     var startDate: Date
     var endDate: Date

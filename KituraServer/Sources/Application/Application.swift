@@ -32,10 +32,16 @@ public class App {
     private func registerHandlers() {
         let recordHandler = RecordHandler()
         recordHandler.registerRoutes(for: router)
+        
+        let userHandler = UserHandler()
+        userHandler.registerRoutes(for: router)
     }
     
     private func setupDB() {
-        let pool = PostgreSQLConnection.createPool(host: "localhost", port: 5432, options: [.databaseName("KituraTeamDB")], poolOptions: ConnectionPoolOptions(initialCapacity: 1, maxCapacity: 5, timeout: 10000))
+        let pool = PostgreSQLConnection.createPool(host: "localhost",
+                                                   port: 5432,
+                                                   options: [.databaseName("KituraTeamDB")],
+                                                   poolOptions: ConnectionPoolOptions(initialCapacity: 1, maxCapacity: 5, timeout: 10000))
         Database.default = Database(pool)
         
         //table for colors

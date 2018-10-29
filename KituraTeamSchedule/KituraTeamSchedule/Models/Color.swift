@@ -8,7 +8,7 @@
 import Foundation
 
 struct Color: Codable {
-    var id: Int
+    var colorId: Int
     var red: Double
     var green: Double
     var blue: Double

@@ -61,6 +61,7 @@
 		69B36A3021832D3F00EC1964 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B36A2F21832D3F00EC1964 /* Database.swift */; };
 		69B36A3521834CC400EC1964 /* RecordHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B36A3421834CC400EC1964 /* RecordHandler.swift */; };
 		69B36A3721834D9A00EC1964 /* EntityHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B36A3621834D9A00EC1964 /* EntityHandlerProtocol.swift */; };
+		69C9A3642187030400EDFC40 /* UserHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C9A3632187030400EDFC40 /* UserHandler.swift */; };
 		OBJ_1004 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_335 /* Package.swift */; };
 		OBJ_1010 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* main.swift */; };
 		OBJ_1012 /* HeliumLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HeliumLogger::HeliumLogger::Product" /* HeliumLogger.framework */; };
@@ -2660,6 +2661,7 @@
 		69B36A2F21832D3F00EC1964 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		69B36A3421834CC400EC1964 /* RecordHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordHandler.swift; sourceTree = "<group>"; };
 		69B36A3621834D9A00EC1964 /* EntityHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityHandlerProtocol.swift; sourceTree = "<group>"; };
+		69C9A3632187030400EDFC40 /* UserHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHandler.swift; sourceTree = "<group>"; };
 		"CircuitBreaker::CircuitBreaker::Product" /* CircuitBreaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CircuitBreaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CloudEnvironment::CloudEnvironment::Product" /* CloudEnvironment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CloudEnvironment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CloudFoundryEnv::CloudFoundryEnv::Product" /* CloudFoundryEnv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CloudFoundryEnv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3583,6 +3585,7 @@
 		69B36A3121834A8000EC1964 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
+				69C9A3632187030400EDFC40 /* UserHandler.swift */,
 				69B36A3421834CC400EC1964 /* RecordHandler.swift */,
 				69B36A3621834D9A00EC1964 /* EntityHandlerProtocol.swift */,
 			);
@@ -6449,6 +6452,7 @@
 				69B36A3721834D9A00EC1964 /* EntityHandlerProtocol.swift in Sources */,
 				OBJ_468 /* Metrics.swift in Sources */,
 				692D30CB21823B1600BB5420 /* Cred.swift in Sources */,
+				69C9A3642187030400EDFC40 /* UserHandler.swift in Sources */,
 				692D30C721823ADC00BB5420 /* Color.swift in Sources */,
 				692D30CD21823BAB00BB5420 /* Record.swift in Sources */,
 				OBJ_469 /* HealthRoutes.swift in Sources */,

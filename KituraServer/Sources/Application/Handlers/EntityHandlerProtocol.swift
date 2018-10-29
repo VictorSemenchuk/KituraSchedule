@@ -13,11 +13,11 @@ import SwiftKueryPostgreSQL
 
 protocol EntityHandlerProtocol {
     func registerRoutes(for router: Router)
-    func queryReasons(with selection: Select) -> [[String: Any?]]?
+    func querySelectQuery(with selection: Select) -> [[String: Any?]]?
 }
 
 extension EntityHandlerProtocol {
-    func queryReasons(with selection: Select) -> [[String: Any?]]? {
+    func querySelectQuery(with selection: Select) -> [[String: Any?]]? {
         guard let connection = Database.default?.getConnection() else {
             return nil
         }

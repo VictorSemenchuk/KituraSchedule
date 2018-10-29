@@ -11,8 +11,8 @@ import SwiftKueryORM
 
 class RecordsTable: Table {
     let tableName = "Records"
-    
-    let id = Column("recordid")
+
+    let id = Column("recordid", autoIncrement: true, primaryKey: true)
     let userId = Column("userid")
     let startDate = Column("startdate")
     let endDate = Column("enddate")

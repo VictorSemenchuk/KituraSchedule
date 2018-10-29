@@ -18,7 +18,11 @@ class ViewController: UIViewController {
     @IBAction func queryDo(_ sender: Any) {
 //        Service.getColors()
 //        Service.getUsers()
-        Service.getReasons()
+        //Service.getReasons()
+        
+        let record = Record(recordId: 4, userId: 1, startDate: Date(), endDate: Date(), reasonId: 3, reason: nil)
+        Service.removeRecord(record: record)
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
