@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		692D30B421822FBB00BB5420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30B321822FBB00BB5420 /* AppDelegate.swift */; };
+		692D30B621822FBB00BB5420 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30B521822FBB00BB5420 /* ViewController.swift */; };
+		692D30B921822FBB00BB5420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692D30B721822FBB00BB5420 /* Main.storyboard */; };
+		692D30BB21822FBC00BB5420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 692D30BA21822FBC00BB5420 /* Assets.xcassets */; };
+		692D30BE21822FBC00BB5420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692D30BC21822FBC00BB5420 /* LaunchScreen.storyboard */; };
+		692D30D821823EDC00BB5420 /* Reason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30D321823EDC00BB5420 /* Reason.swift */; };
+		692D30D921823EDC00BB5420 /* Cred.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30D421823EDC00BB5420 /* Cred.swift */; };
+		692D30DA21823EDC00BB5420 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30D521823EDC00BB5420 /* User.swift */; };
+		692D30DB21823EDC00BB5420 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30D621823EDC00BB5420 /* Record.swift */; };
+		692D30DC21823EDC00BB5420 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30D721823EDC00BB5420 /* Color.swift */; };
+		692D30DE21823F1A00BB5420 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30DD21823F1A00BB5420 /* Service.swift */; };
+		7467FEF4A1461D5059EFB5F5 /* Pods_KituraTeamSchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041672A5B435806AB3E9516B /* Pods_KituraTeamSchedule.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		041672A5B435806AB3E9516B /* Pods_KituraTeamSchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KituraTeamSchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F9518F0CBA3EEABD1170329 /* Pods-KituraTeamSchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KituraTeamSchedule.release.xcconfig"; path = "Pods/Target Support Files/Pods-KituraTeamSchedule/Pods-KituraTeamSchedule.release.xcconfig"; sourceTree = "<group>"; };
+		692D30B021822FBB00BB5420 /* KituraTeamSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KituraTeamSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		692D30B321822FBB00BB5420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		692D30B521822FBB00BB5420 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		692D30B821822FBB00BB5420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		692D30BA21822FBC00BB5420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		692D30BD21822FBC00BB5420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		692D30BF21822FBC00BB5420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		692D30D321823EDC00BB5420 /* Reason.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reason.swift; sourceTree = "<group>"; };
+		692D30D421823EDC00BB5420 /* Cred.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cred.swift; sourceTree = "<group>"; };
+		692D30D521823EDC00BB5420 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		692D30D621823EDC00BB5420 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		692D30D721823EDC00BB5420 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		692D30DD21823F1A00BB5420 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		CD3CA6494FE8361A28CA141B /* Pods-KituraTeamSchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KituraTeamSchedule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KituraTeamSchedule/Pods-KituraTeamSchedule.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		692D30AD21822FBB00BB5420 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7467FEF4A1461D5059EFB5F5 /* Pods_KituraTeamSchedule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		692D30A721822FBB00BB5420 = {
+			isa = PBXGroup;
+			children = (
+				692D30B221822FBB00BB5420 /* KituraTeamSchedule */,
+				692D30B121822FBB00BB5420 /* Products */,
+				AA4175DC4E940FE42A15B45A /* Pods */,
+				CE4654A3CD5008DDA0A132F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		692D30B121822FBB00BB5420 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				692D30B021822FBB00BB5420 /* KituraTeamSchedule.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		692D30B221822FBB00BB5420 /* KituraTeamSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				692D30D221823EDC00BB5420 /* Models */,
+				692D30B321822FBB00BB5420 /* AppDelegate.swift */,
+				692D30B521822FBB00BB5420 /* ViewController.swift */,
+				692D30B721822FBB00BB5420 /* Main.storyboard */,
+				692D30BA21822FBC00BB5420 /* Assets.xcassets */,
+				692D30BC21822FBC00BB5420 /* LaunchScreen.storyboard */,
+				692D30BF21822FBC00BB5420 /* Info.plist */,
+				692D30DD21823F1A00BB5420 /* Service.swift */,
+			);
+			path = KituraTeamSchedule;
+			sourceTree = "<group>";
+		};
+		692D30D221823EDC00BB5420 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				692D30D321823EDC00BB5420 /* Reason.swift */,
+				692D30D421823EDC00BB5420 /* Cred.swift */,
+				692D30D521823EDC00BB5420 /* User.swift */,
+				692D30D621823EDC00BB5420 /* Record.swift */,
+				692D30D721823EDC00BB5420 /* Color.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA4175DC4E940FE42A15B45A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD3CA6494FE8361A28CA141B /* Pods-KituraTeamSchedule.debug.xcconfig */,
+				4F9518F0CBA3EEABD1170329 /* Pods-KituraTeamSchedule.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE4654A3CD5008DDA0A132F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				041672A5B435806AB3E9516B /* Pods_KituraTeamSchedule.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		692D30AF21822FBB00BB5420 /* KituraTeamSchedule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 692D30C221822FBC00BB5420 /* Build configuration list for PBXNativeTarget "KituraTeamSchedule" */;
+			buildPhases = (
+				81A6663C8CFBF2A910339807 /* [CP] Check Pods Manifest.lock */,
+				692D30AC21822FBB00BB5420 /* Sources */,
+				692D30AD21822FBB00BB5420 /* Frameworks */,
+				692D30AE21822FBB00BB5420 /* Resources */,
+				245783F915240758207DCC16 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KituraTeamSchedule;
+			productName = KituraTeamSchedule;
+			productReference = 692D30B021822FBB00BB5420 /* KituraTeamSchedule.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		692D30A821822FBB00BB5420 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = KituraTeam;
+				TargetAttributes = {
+					692D30AF21822FBB00BB5420 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 692D30AB21822FBB00BB5420 /* Build configuration list for PBXProject "KituraTeamSchedule" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 692D30A721822FBB00BB5420;
+			productRefGroup = 692D30B121822FBB00BB5420 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				692D30AF21822FBB00BB5420 /* KituraTeamSchedule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		692D30AE21822FBB00BB5420 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				692D30BE21822FBC00BB5420 /* LaunchScreen.storyboard in Resources */,
+				692D30BB21822FBC00BB5420 /* Assets.xcassets in Resources */,
+				692D30B921822FBB00BB5420 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		245783F915240758207DCC16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KituraTeamSchedule/Pods-KituraTeamSchedule-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KituraKit/KituraKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KituraKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KituraTeamSchedule/Pods-KituraTeamSchedule-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81A6663C8CFBF2A910339807 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KituraTeamSchedule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		692D30AC21822FBB00BB5420 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				692D30D821823EDC00BB5420 /* Reason.swift in Sources */,
+				692D30DE21823F1A00BB5420 /* Service.swift in Sources */,
+				692D30B621822FBB00BB5420 /* ViewController.swift in Sources */,
+				692D30DC21823EDC00BB5420 /* Color.swift in Sources */,
+				692D30DB21823EDC00BB5420 /* Record.swift in Sources */,
+				692D30B421822FBB00BB5420 /* AppDelegate.swift in Sources */,
+				692D30DA21823EDC00BB5420 /* User.swift in Sources */,
+				692D30D921823EDC00BB5420 /* Cred.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		692D30B721822FBB00BB5420 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				692D30B821822FBB00BB5420 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		692D30BC21822FBC00BB5420 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				692D30BD21822FBC00BB5420 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		692D30C021822FBC00BB5420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		692D30C121822FBC00BB5420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		692D30C321822FBC00BB5420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD3CA6494FE8361A28CA141B /* Pods-KituraTeamSchedule.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KituraTeamSchedule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOSLab.KituraTeamSchedule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		692D30C421822FBC00BB5420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F9518F0CBA3EEABD1170329 /* Pods-KituraTeamSchedule.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KituraTeamSchedule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOSLab.KituraTeamSchedule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		692D30AB21822FBB00BB5420 /* Build configuration list for PBXProject "KituraTeamSchedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				692D30C021822FBC00BB5420 /* Debug */,
+				692D30C121822FBC00BB5420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		692D30C221822FBC00BB5420 /* Build configuration list for PBXNativeTarget "KituraTeamSchedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				692D30C321822FBC00BB5420 /* Debug */,
+				692D30C421822FBC00BB5420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 692D30A821822FBB00BB5420 /* Project object */;
+}
