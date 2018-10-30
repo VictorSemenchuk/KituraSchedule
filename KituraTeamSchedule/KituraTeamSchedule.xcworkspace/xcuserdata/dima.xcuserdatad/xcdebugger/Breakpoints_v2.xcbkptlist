@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KituraTeamSchedule/Service/Service+GET.swift"
+            timestampString = "562583940.669663"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "getRecordsByUserID(userId:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KituraTeamSchedule/Service/Service+GET.swift"
+            timestampString = "562583940.669776"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "getElementByID(dataType:id:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static KituraTeamSchedule.Service.getElementByID(dataType: KituraTeamSchedule.Service.DataType, id: Swift.Int, completion: () -&gt; ()) -&gt; ()"
+                  moduleName = "KituraTeamSchedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dima/CLONED/KituraSchedule/KituraTeamSchedule/KituraTeamSchedule/Service/Service+GET.swift"
+                  timestampString = "562583940.931324"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "619">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;KituraTeamSchedule.User&gt;, Swift.Optional&lt;KituraKit.RequestError&gt;) -&gt; () in static KituraTeamSchedule.Service.getElementByID(dataType: KituraTeamSchedule.Service.DataType, id: Swift.Int, completion: () -&gt; ()) -&gt; ()"
+                  moduleName = "KituraTeamSchedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dima/CLONED/KituraSchedule/KituraTeamSchedule/KituraTeamSchedule/Service/Service+GET.swift"
+                  timestampString = "562583940.933987"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KituraTeamSchedule/Service/Service+GET.swift"
+            timestampString = "562583940.669861"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "getElementByID(dataType:id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

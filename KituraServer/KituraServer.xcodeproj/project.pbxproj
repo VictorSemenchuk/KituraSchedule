@@ -52,6 +52,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		32F5180621878CB100E026F3 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B36A2D21831AE500EC1964 /* Application.swift */; };
 		692D30C721823ADC00BB5420 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30C621823ADC00BB5420 /* Color.swift */; };
 		692D30C921823AE500BB5420 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30C821823AE500BB5420 /* User.swift */; };
 		692D30CB21823B1600BB5420 /* Cred.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30CA21823B1600BB5420 /* Cred.swift */; };
@@ -6071,6 +6072,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				32F5180621878CB100E026F3 /* Application.swift in Sources */,
 				OBJ_1010 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

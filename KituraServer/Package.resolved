@@ -29,15 +29,6 @@
         }
       },
       {
-        "package": "CCurl",
-        "repositoryURL": "https://github.com/IBM-Swift/CCurl.git",
-        "state": {
-          "branch": null,
-          "revision": "2a431e3a5fb8d004aa7d4d1bebb5d511f568c43e",
-          "version": "1.0.0"
-        }
-      },
-      {
         "package": "CircuitBreaker",
         "repositoryURL": "https://github.com/IBM-Swift/CircuitBreaker.git",
         "state": {
@@ -62,15 +53,6 @@
           "branch": null,
           "revision": "b37c1c69e6a0d4b191eca7c064afcedfd2a1803b",
           "version": "8.0.0"
-        }
-      },
-      {
-        "package": "CommonCrypto",
-        "repositoryURL": "https://github.com/IBM-Swift/CommonCrypto.git",
-        "state": {
-          "branch": null,
-          "revision": "9156d238dbc4c15455b77b45e721b2bb0b995e31",
-          "version": "1.0.0"
         }
       },
       {

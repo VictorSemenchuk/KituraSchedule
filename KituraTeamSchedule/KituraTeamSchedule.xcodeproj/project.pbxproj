@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		32F517FD218786CB00E026F3 /* Service+POST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F517FA218786CB00E026F3 /* Service+POST.swift */; };
 		32F517FE218786CB00E026F3 /* Service+GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F517FB218786CB00E026F3 /* Service+GET.swift */; };
-		32F51802218788BA00E026F3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F51801218788BA00E026F3 /* Service.swift */; };
+		32F5180A21884D6600E026F3 /* Service+Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F5180921884D6600E026F3 /* Service+Authentication.swift */; };
+		32F5180C218856A900E026F3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F5180B218856A900E026F3 /* Service.swift */; };
 		692D30B421822FBB00BB5420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30B321822FBB00BB5420 /* AppDelegate.swift */; };
 		692D30B621822FBB00BB5420 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30B521822FBB00BB5420 /* ViewController.swift */; };
 		692D30B921822FBB00BB5420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692D30B721822FBB00BB5420 /* Main.storyboard */; };
@@ -27,7 +28,8 @@
 		041672A5B435806AB3E9516B /* Pods_KituraTeamSchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KituraTeamSchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F517FA218786CB00E026F3 /* Service+POST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Service+POST.swift"; sourceTree = "<group>"; };
 		32F517FB218786CB00E026F3 /* Service+GET.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Service+GET.swift"; sourceTree = "<group>"; };
-		32F51801218788BA00E026F3 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Service.swift; path = ../../../../../.Trash/Service.swift; sourceTree = "<group>"; };
+		32F5180921884D6600E026F3 /* Service+Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service+Authentication.swift"; sourceTree = "<group>"; };
+		32F5180B218856A900E026F3 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		4F9518F0CBA3EEABD1170329 /* Pods-KituraTeamSchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KituraTeamSchedule.release.xcconfig"; path = "Pods/Target Support Files/Pods-KituraTeamSchedule/Pods-KituraTeamSchedule.release.xcconfig"; sourceTree = "<group>"; };
 		692D30B021822FBB00BB5420 /* KituraTeamSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KituraTeamSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		692D30B321822FBB00BB5420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,9 +61,10 @@
 		32F51800218786D600E026F3 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				32F5180B218856A900E026F3 /* Service.swift */,
 				32F517FB218786CB00E026F3 /* Service+GET.swift */,
 				32F517FA218786CB00E026F3 /* Service+POST.swift */,
-				32F51801218788BA00E026F3 /* Service.swift */,
+				32F5180921884D6600E026F3 /* Service+Authentication.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -245,9 +248,10 @@
 				692D30DC21823EDC00BB5420 /* Color.swift in Sources */,
 				692D30DB21823EDC00BB5420 /* Record.swift in Sources */,
 				692D30B421822FBB00BB5420 /* AppDelegate.swift in Sources */,
+				32F5180C218856A900E026F3 /* Service.swift in Sources */,
 				32F517FE218786CB00E026F3 /* Service+GET.swift in Sources */,
+				32F5180A21884D6600E026F3 /* Service+Authentication.swift in Sources */,
 				692D30DA21823EDC00BB5420 /* User.swift in Sources */,
-				32F51802218788BA00E026F3 /* Service.swift in Sources */,
 				692D30D921823EDC00BB5420 /* Cred.swift in Sources */,
 				32F517FD218786CB00E026F3 /* Service+POST.swift in Sources */,
 			);

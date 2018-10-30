@@ -28,58 +28,30 @@ extension Service {
     }
     
     
-    //REASONS
-    static func getReasons(completion: @escaping((_ reasons:[Reason]?,_ error: RequestError?)->())) {
-        guard let client  = KituraKit(baseURL: kKituraClientURL) else {
-            print("Error creating KituraKit client")
-            return
-        }
-        
-        client.get(DataType.Reasons.rawValue) { (reasons: [Reason]?, error: RequestError?) in
-            guard let reasons = reasons else {
-                completion(nil, error)
-                return
-            }
-            completion(reasons, nil)
-        }
-    }
     
     
     
     //RECORDS
-    static func getRecordsByUserID(userID:String, completion: @escaping((_ records:[Record]?,_ error: RequestError?)->())) {
+    static func getRecordsByUserID(userId:Int, completion: @escaping((_ records:[Record]?,_ error: RequestError?)->())) {
         guard let client  = KituraKit(baseURL: kKituraClientURL) else {
             print("Error creating KituraKit client")
             return
         }
         
-        client.get(DataType.Records.rawValue) { (records: [Record]?, error: RequestError?) in
+        let userIdParam = RecordParams.init(userId: userId)
+        
+        client.get(DataType.Records.rawValue, query: userIdParam) { (records: [Record]?, error) in
             guard let records = records else {
                 completion(nil, error)
                 return
             }
+            
             completion(records, nil)
-        }
-    }
-    
-    //CREDS
-    static func getCreds(completion: @escaping((_ creds:[Cred]?,_ error: RequestError?)->())) {
-        guard let client  = KituraKit(baseURL: kKituraClientURL) else {
-            print("Error creating KituraKit client")
-            return
-        }
-        
-        client.get(DataType.Colors.rawValue) { (creds: [Cred]?, error: RequestError?) in
-            guard let creds = creds else {
-                completion(nil, error)
-                return
-            }
-            completion(creds, nil)
         }
     }
 
     
-    static func getElementByID(dataType: DataType, id: String, completion: @escaping(()->())) {
+    static func getElementByID(dataType: DataType, id: Int, completion: @escaping(()->())) {
         guard let client  = KituraKit(baseURL: kKituraClientURL) else {
             print("Error creating KituraKit client")
             return
@@ -91,47 +63,5 @@ extension Service {
             print(obj)
         }
     }
-    
-    
-    
-    
-    
-    
-    static func addRecord(record: Record) {
-        guard let client = KituraKit(baseURL: "http://EPBYMINW4879:8080") else {
-            print("Error creating KituraKit client")
-            return
-        }
-        client.post("/addrecord", data: record) { (insertedRecord: Record?, error: RequestError?) in
-            print("Inserted")
-        }
-    }
-    
-    static func updateRecord(record: Record) {
-        guard let client = KituraKit(baseURL: "http://EPBYMINW4879:8080") else {
-            print("Error creating KituraKit client")
-            return
-        }
-        client.post("/updaterecord", data: record) { (updatedRecord: Record?, error: RequestError?) in
-            if let error = error {
-                print(error.localizedDescription)
-            } else {
-                print("Updated")
-            }
-        }
-    }
-    
-    static func removeRecord(record: Record) {
-        guard let client = KituraKit(baseURL: "http://EPBYMINW4879:8080") else {
-            print("Error creating KituraKit client")
-            return
-        }
-        client.post("/removerecord", data: record) { (updatedRecord: Record?, error: RequestError?) in
-            if let error = error {
-                print(error.localizedDescription)
-            } else {
-                print("Removed")
-            }
-        }
-    }
+
 }

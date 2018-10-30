@@ -20,14 +20,14 @@ class ViewController: UIViewController {
 //        Service.getUsers()
         //Service.getReasons()
         
-        let record = Record(recordId: 4, userId: 1, startDate: Date(), endDate: Date(), reasonId: 3, reason: nil)
-        Service.removeRecord(record: record)
+//        let record = Record(recordId: 4, userId: 1, startDate: Date(), endDate: Date(), reasonId: 3, reason: nil)
+//        Service.removeRecord(record: record)
+        Service.getRecordsByUserID(userId: 1) { (records, error) in
+            records?.forEach({ (record) in
+                print(record)
+            })
+        }
         
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 

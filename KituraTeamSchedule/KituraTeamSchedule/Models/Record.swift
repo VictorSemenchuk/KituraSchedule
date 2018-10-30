@@ -6,6 +6,11 @@
 //
 
 import Foundation
+import KituraKit
+
+struct RecordParams: QueryParams {
+    var userId:Int
+}
 
 struct Record: Codable {
     var recordId: Int
