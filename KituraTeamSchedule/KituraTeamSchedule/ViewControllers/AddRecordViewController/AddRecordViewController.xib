@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddRecordViewController" customModule="KituraTeamSchedule" customModuleProvider="target">
+            <connections>
+                <outlet property="dateSetterView" destination="O0N-sB-wYk" id="R0c-zL-KBm"/>
+                <outlet property="detailsTextField" destination="FgB-hA-ie3" id="mSG-xl-FE4"/>
+                <outlet property="reasonCollectionView" destination="Rwl-q7-ahI" id="mJ0-tV-vx7"/>
+                <outlet property="scrollView" destination="FSc-LN-oxu" id="g2k-Wb-of5"/>
+                <outlet property="view" destination="iN0-l3-epB" id="fnk-60-4ay"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="FSc-LN-oxu">
+                    <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Rwl-q7-ahI">
+                            <rect key="frame" x="16" y="20" width="382" height="80"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="yml-DS-P0Y"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DcD-7h-0tS">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O0N-sB-wYk" customClass="KPIDateSetter" customModule="KituraTeamSchedule" customModuleProvider="target">
+                            <rect key="frame" x="16" y="130" width="382" height="130"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="130" id="Lln-uP-1gK"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FgB-hA-ie3">
+                            <rect key="frame" x="16" y="321" width="382" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="Qef-bH-ctq"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0z-fl-RPa">
+                            <rect key="frame" x="16" y="290" width="382" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="FgB-hA-ie3" secondAttribute="bottom" constant="10" id="405-vh-sn5"/>
+                        <constraint firstItem="m0z-fl-RPa" firstAttribute="leading" secondItem="O0N-sB-wYk" secondAttribute="leading" id="4vE-iL-DvX"/>
+                        <constraint firstItem="FgB-hA-ie3" firstAttribute="leading" secondItem="Rwl-q7-ahI" secondAttribute="leading" id="6zg-cF-hyM"/>
+                        <constraint firstItem="Rwl-q7-ahI" firstAttribute="top" secondItem="FSc-LN-oxu" secondAttribute="top" constant="20" id="84Q-cu-YqA"/>
+                        <constraint firstItem="FgB-hA-ie3" firstAttribute="top" secondItem="m0z-fl-RPa" secondAttribute="bottom" constant="10" id="875-Ce-1y4"/>
+                        <constraint firstItem="O0N-sB-wYk" firstAttribute="top" secondItem="Rwl-q7-ahI" secondAttribute="bottom" constant="30" id="Bmn-m5-nlO"/>
+                        <constraint firstItem="FgB-hA-ie3" firstAttribute="trailing" secondItem="Rwl-q7-ahI" secondAttribute="trailing" id="Bsk-1Y-ylp"/>
+                        <constraint firstItem="m0z-fl-RPa" firstAttribute="trailing" secondItem="O0N-sB-wYk" secondAttribute="trailing" id="La1-x2-Uat"/>
+                        <constraint firstItem="O0N-sB-wYk" firstAttribute="leading" secondItem="Rwl-q7-ahI" secondAttribute="leading" id="Nqv-KQ-5jz"/>
+                        <constraint firstItem="Rwl-q7-ahI" firstAttribute="leading" secondItem="FSc-LN-oxu" secondAttribute="leading" constant="16" id="SQL-Eb-P6z"/>
+                        <constraint firstItem="m0z-fl-RPa" firstAttribute="top" secondItem="O0N-sB-wYk" secondAttribute="bottom" constant="30" id="WMD-FF-dEf"/>
+                        <constraint firstAttribute="trailing" secondItem="Rwl-q7-ahI" secondAttribute="trailing" constant="16" id="icF-B1-0Jl"/>
+                        <constraint firstItem="O0N-sB-wYk" firstAttribute="trailing" secondItem="Rwl-q7-ahI" secondAttribute="trailing" id="kaT-Pq-kGd"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Rwl-q7-ahI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="3Rg-kk-yxs"/>
+                <constraint firstItem="FSc-LN-oxu" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="DBh-a0-ZM6"/>
+                <constraint firstItem="FSc-LN-oxu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="DOf-Fm-yj2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Rwl-q7-ahI" secondAttribute="trailing" constant="16" id="fXO-Pk-o7e"/>
+                <constraint firstItem="FSc-LN-oxu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qvh-Yk-SJH"/>
+                <constraint firstItem="FSc-LN-oxu" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="tIU-Lw-jAC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="35" y="-74"/>
+        </view>
+    </objects>
+</document>

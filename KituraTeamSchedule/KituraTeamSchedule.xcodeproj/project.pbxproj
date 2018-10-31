@@ -46,7 +46,11 @@
 		692D30DB21823EDC00BB5420 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30D621823EDC00BB5420 /* Record.swift */; };
 		692D30DC21823EDC00BB5420 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30D721823EDC00BB5420 /* Color.swift */; };
 		7467FEF4A1461D5059EFB5F5 /* Pods_KituraTeamSchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041672A5B435806AB3E9516B /* Pods_KituraTeamSchedule.framework */; };
-		CE75588F21886DEF00E3E254 /* AddRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75588E21886DEF00E3E254 /* AddRecordViewController.swift */; };
+		DA877A6C218A180B0007B147 /* KPIDateSetter.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA877A68218A180B0007B147 /* KPIDateSetter.xib */; };
+		DA877A6D218A180B0007B147 /* AddRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA877A69218A180B0007B147 /* AddRecordViewController.xib */; };
+		DA877A6E218A180B0007B147 /* KPIDateSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA877A6A218A180B0007B147 /* KPIDateSetter.swift */; };
+		DA877A6F218A180B0007B147 /* AddRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA877A6B218A180B0007B147 /* AddRecordViewController.swift */; };
+		DA877A72218A1E0F0007B147 /* UItextField+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA877A71218A1E0F0007B147 /* UItextField+Appearance.swift */; };
 		DABBB5EC2189EB80004E6793 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBB5E62189EB80004E6793 /* Date+Format.swift */; };
 		DABBB5ED2189EB80004E6793 /* String+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBB5E72189EB80004E6793 /* String+Format.swift */; };
 		DABBB5EF2189EB80004E6793 /* UIViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBB5E92189EB80004E6793 /* UIViewController+Constraints.swift */; };
@@ -103,7 +107,11 @@
 		692D30D621823EDC00BB5420 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		692D30D721823EDC00BB5420 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		CD3CA6494FE8361A28CA141B /* Pods-KituraTeamSchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KituraTeamSchedule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KituraTeamSchedule/Pods-KituraTeamSchedule.debug.xcconfig"; sourceTree = "<group>"; };
-		CE75588E21886DEF00E3E254 /* AddRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordViewController.swift; sourceTree = "<group>"; };
+		DA877A68218A180B0007B147 /* KPIDateSetter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KPIDateSetter.xib; path = KituraTeamSchedule/Views/KPIDateSetter.xib; sourceTree = SOURCE_ROOT; };
+		DA877A69218A180B0007B147 /* AddRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddRecordViewController.xib; path = KituraTeamSchedule/ViewControllers/AddRecordViewController/AddRecordViewController.xib; sourceTree = SOURCE_ROOT; };
+		DA877A6A218A180B0007B147 /* KPIDateSetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KPIDateSetter.swift; path = KituraTeamSchedule/Views/KPIDateSetter.swift; sourceTree = SOURCE_ROOT; };
+		DA877A6B218A180B0007B147 /* AddRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddRecordViewController.swift; path = KituraTeamSchedule/ViewControllers/AddRecordViewController/AddRecordViewController.swift; sourceTree = SOURCE_ROOT; };
+		DA877A71218A1E0F0007B147 /* UItextField+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UItextField+Appearance.swift"; sourceTree = "<group>"; };
 		DABBB5E62189EB80004E6793 /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
 		DABBB5E72189EB80004E6793 /* String+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Format.swift"; sourceTree = "<group>"; };
 		DABBB5E92189EB80004E6793 /* UIViewController+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Constraints.swift"; sourceTree = "<group>"; };
@@ -142,7 +150,7 @@
 		32F5181121885BF900E026F3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CE75588E21886DEF00E3E254 /* AddRecordViewController.swift */,
+				DA877A70218A18470007B147 /* AddRecordViewController */,
 				32F518182188738C00E026F3 /* Welcome */,
 				32F518172188737D00E026F3 /* SignIn */,
 				32F5182421889E9B00E026F3 /* SignUp */,
@@ -175,6 +183,7 @@
 		32F5181F218893B800E026F3 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				DA877A71218A1E0F0007B147 /* UItextField+Appearance.swift */,
 				62984BFC2189BBBC0082121E /* Dactionary+Users.swift */,
 				62984C072189C0140082121E /* UIColor+UserColor.swift */,
 				32F5181D2188939800E026F3 /* UIVew+Animation.swift */,
@@ -213,6 +222,8 @@
 		62984BFE2189BE740082121E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DA877A6A218A180B0007B147 /* KPIDateSetter.swift */,
+				DA877A68218A180B0007B147 /* KPIDateSetter.xib */,
 				62984BFF2189BE900082121E /* UserTableViewCell */,
 				DABBB5F92189EC3F004E6793 /* RecordTableViewCell */,
 			);
@@ -311,6 +322,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DA877A70218A18470007B147 /* AddRecordViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA877A6B218A180B0007B147 /* AddRecordViewController.swift */,
+				DA877A69218A180B0007B147 /* AddRecordViewController.xib */,
+			);
+			path = AddRecordViewController;
+			sourceTree = "<group>";
+		};
 		DABBB5F22189EBC5004E6793 /* RecordsViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,9 +417,11 @@
 				32F5181021885BEF00E026F3 /* SignInViewController.xib in Resources */,
 				32F5181A2188793E00E026F3 /* WelcomeViewController.xib in Resources */,
 				32F5182221889E8D00E026F3 /* SignUpViewController.xib in Resources */,
+				DA877A6C218A180B0007B147 /* KPIDateSetter.xib in Resources */,
 				692D30BE21822FBC00BB5420 /* LaunchScreen.storyboard in Resources */,
 				62984BE92189A9B80082121E /* UserListViewController.xib in Resources */,
 				692D30BB21822FBC00BB5420 /* Assets.xcassets in Resources */,
+				DA877A6D218A180B0007B147 /* AddRecordViewController.xib in Resources */,
 				692D30B921822FBB00BB5420 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,9 +474,9 @@
 			files = (
 				62984C032189BE900082121E /* UserTableViewCell.swift in Sources */,
 				692D30D821823EDC00BB5420 /* Reason.swift in Sources */,
+				DA877A6E218A180B0007B147 /* KPIDateSetter.swift in Sources */,
 				62984C17218A026C0082121E /* SignInViewController+KeyboardHandling.swift in Sources */,
 				DABBB5EF2189EB80004E6793 /* UIViewController+Constraints.swift in Sources */,
-				CE75588F21886DEF00E3E254 /* AddRecordViewController.swift in Sources */,
 				DABBB5FF2189EC3F004E6793 /* RLDescriptionView.swift in Sources */,
 				692D30DC21823EDC00BB5420 /* Color.swift in Sources */,
 				DABBB5F62189EBC5004E6793 /* RecordsViewController+TableView.swift in Sources */,
@@ -473,6 +495,7 @@
 				DABBB5F72189EBC5004E6793 /* RecordsViewController+SetupViews.swift in Sources */,
 				32F517FE218786CB00E026F3 /* Service+GET.swift in Sources */,
 				62984BF72189B11F0082121E /* UIViewController+ShowErrorAlert.swift in Sources */,
+				DA877A72218A1E0F0007B147 /* UItextField+Appearance.swift in Sources */,
 				62984C082189C0140082121E /* UIColor+UserColor.swift in Sources */,
 				32F5180A21884D6600E026F3 /* Service+Authentication.swift in Sources */,
 				32F5180F21885BEF00E026F3 /* SignInViewController.swift in Sources */,
@@ -484,6 +507,7 @@
 				32F5181E2188939800E026F3 /* UIVew+Animation.swift in Sources */,
 				62984C062189BFE90082121E /* Constants+NibNames.swift in Sources */,
 				692D30D921823EDC00BB5420 /* Cred.swift in Sources */,
+				DA877A6F218A180B0007B147 /* AddRecordViewController.swift in Sources */,
 				62984C0C2189C8300082121E /* Navigation.swift in Sources */,
 				32F517FD218786CB00E026F3 /* Service+POST.swift in Sources */,
 				DABBB5ED2189EB80004E6793 /* String+Format.swift in Sources */,
@@ -635,13 +659,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7L98UN474A;
+				DEVELOPMENT_TEAM = 5M3HNT6J9D;
 				INFOPLIST_FILE = KituraTeamSchedule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.iOSLab.KituraTeamSchedule;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOSLab.KituraTeamSchedule1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -654,13 +678,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7L98UN474A;
+				DEVELOPMENT_TEAM = 5M3HNT6J9D;
 				INFOPLIST_FILE = KituraTeamSchedule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.iOSLab.KituraTeamSchedule;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOSLab.KituraTeamSchedule1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

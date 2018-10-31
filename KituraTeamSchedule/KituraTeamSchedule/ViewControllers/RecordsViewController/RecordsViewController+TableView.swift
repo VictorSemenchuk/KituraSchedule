@@ -25,8 +25,8 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let addrecordVC = AddRecordViewController.init(with: nil, presentation: .presentedModally, nibName: nil, bundle: nil)
-        self.present(addrecordVC, animated: true, completion: nil)
+        //let addrecordVC = AddRecordViewController.init(with: nil, presentation: .presentedModally, nibName: nil, bundle: nil)
+        //self.present(addrecordVC, animated: true, completion: nil)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
