@@ -39,7 +39,7 @@ struct User: Codable {
     var id: Int
     var firstName: String
     var lastName: String
-    
+    var email: String
     var records: [Record]?
     var cred: Cred?
     

@@ -18,6 +18,7 @@ struct Record: Codable {
     var startDate: Date
     var endDate: Date
     var reasonId: Int
+    var details:String
     
     var reason: Reason?
 }

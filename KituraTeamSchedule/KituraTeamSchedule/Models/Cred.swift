@@ -9,6 +9,5 @@ import Foundation
 
 struct Cred: Codable {
     var userUid: Int
-    var email: String
     var password: String
 }
