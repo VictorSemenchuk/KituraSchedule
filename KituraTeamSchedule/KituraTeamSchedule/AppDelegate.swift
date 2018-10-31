@@ -16,10 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
-        let initialVC = RecordsViewController()
-        initialVC.title = "Tasks"
-        let navController = UINavigationController.init(rootViewController: initialVC)
-        self.window?.rootViewController = navController
+        let welcome = WelcomeViewController()
+
+        self.window?.rootViewController = welcome
         self.window?.makeKeyAndVisible()
         
         UINavigationBar.appearance().barTintColor = UIColor(red: 0.0/255.0, green: 186.0/255.0, blue: 230.0/255.0, alpha: 255.0/255.0)
