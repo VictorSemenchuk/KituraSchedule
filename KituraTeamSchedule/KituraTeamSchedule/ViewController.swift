@@ -55,10 +55,6 @@ class ViewController: UIViewController {
         self.applyConstraints(to: table)
     }
     
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return UIInterfaceOrientationMask.allButUpsideDown
-    }
-    
 }
 
 

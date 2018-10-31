@@ -12,17 +12,14 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    weak var rootVC: ViewController?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-    
-        let signIn = WelcomeViewController()
-        self.window?.rootViewController = signIn
-        
-        //Service.authenticate(<#T##Service#>)
-        
+        self.window = UIWindow.init(frame: UIScreen.main.bounds)
+        let initialVC = ViewController()
+        initialVC.title = "Tasks"
+        let navController = UINavigationController.init(rootViewController: initialVC)
+        self.window?.rootViewController = navController
         self.window?.makeKeyAndVisible()
         return true
     }
