@@ -53,11 +53,15 @@ class WelcomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func setupViews() {
-//        let cornerRadius: CGFloat = 8
-//        self.signInButton.layer.cornerRadius = cornerRadius
-//        self.signUpButton.layer.cornerRadius = cornerRadius
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.view.alpha = 0
+        
+        UIView.animate(withDuration: 0.4) {
+            self.view.alpha = 1
+        }
     }
     
-
+    func setupViews() {
+    }
 }
