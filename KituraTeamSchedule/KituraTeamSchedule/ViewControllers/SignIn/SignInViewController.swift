@@ -13,7 +13,7 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var emailTexField: UITextField!
-    @IBOutlet weak var PasswordTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signInButton: UIButton!
     
     
@@ -26,9 +26,25 @@ class SignInViewController: UIViewController {
     //MARK: - VC LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //set text feild delegates
+        self.emailTexField.delegate = self
+        self.passwordTextField.delegate = self
+        
+        //setupViews
         self.setupViews()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.registerForKeyboardNotifications()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.removeObserver()
+    }
+
     
     func setupViews() {
         

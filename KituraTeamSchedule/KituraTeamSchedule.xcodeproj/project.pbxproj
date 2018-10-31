@@ -31,6 +31,11 @@
 		62984C0A2189C7D20082121E /* UserListViewController+FetchUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984C092189C7D20082121E /* UserListViewController+FetchUsers.swift */; };
 		62984C0C2189C8300082121E /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984C0B2189C8300082121E /* Navigation.swift */; };
 		62984C0F2189C8C60082121E /* KituraTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984C0E2189C8C60082121E /* KituraTabBarController.swift */; };
+		62984C112189F6230082121E /* UIViewController+KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984C102189F6230082121E /* UIViewController+KeyboardHandler.swift */; };
+		62984C132189FC940082121E /* SignUpViewController+KeyboardHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984C122189FC940082121E /* SignUpViewController+KeyboardHandling.swift */; };
+		62984C152189FF220082121E /* SignUpViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984C142189FF220082121E /* SignUpViewController+UITextFieldDelegate.swift */; };
+		62984C17218A026C0082121E /* SignInViewController+KeyboardHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984C16218A026C0082121E /* SignInViewController+KeyboardHandling.swift */; };
+		62984C19218A02830082121E /* SignInViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984C18218A02830082121E /* SignInViewController+UITextFieldDelegate.swift */; };
 		692D30B421822FBB00BB5420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30B321822FBB00BB5420 /* AppDelegate.swift */; };
 		692D30B921822FBB00BB5420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692D30B721822FBB00BB5420 /* Main.storyboard */; };
 		692D30BB21822FBC00BB5420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 692D30BA21822FBC00BB5420 /* Assets.xcassets */; };
@@ -81,6 +86,11 @@
 		62984C092189C7D20082121E /* UserListViewController+FetchUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserListViewController+FetchUsers.swift"; sourceTree = "<group>"; };
 		62984C0B2189C8300082121E /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		62984C0E2189C8C60082121E /* KituraTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KituraTabBarController.swift; sourceTree = "<group>"; };
+		62984C102189F6230082121E /* UIViewController+KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardHandler.swift"; sourceTree = "<group>"; };
+		62984C122189FC940082121E /* SignUpViewController+KeyboardHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+KeyboardHandling.swift"; sourceTree = "<group>"; };
+		62984C142189FF220082121E /* SignUpViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
+		62984C16218A026C0082121E /* SignInViewController+KeyboardHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+KeyboardHandling.swift"; sourceTree = "<group>"; };
+		62984C18218A02830082121E /* SignInViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
 		692D30B021822FBB00BB5420 /* KituraTeamSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KituraTeamSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		692D30B321822FBB00BB5420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		692D30B821822FBB00BB5420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -146,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				32F5180D21885BEF00E026F3 /* SignInViewController.swift */,
+				62984C16218A026C0082121E /* SignInViewController+KeyboardHandling.swift */,
+				62984C18218A02830082121E /* SignInViewController+UITextFieldDelegate.swift */,
 				32F5180E21885BEF00E026F3 /* SignInViewController.xib */,
 			);
 			path = SignIn;
@@ -171,6 +183,7 @@
 				DABBB5E62189EB80004E6793 /* Date+Format.swift */,
 				DABBB5E72189EB80004E6793 /* String+Format.swift */,
 				DABBB5E92189EB80004E6793 /* UIViewController+Constraints.swift */,
+				62984C102189F6230082121E /* UIViewController+KeyboardHandler.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -179,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				32F5182121889E8D00E026F3 /* SignUpViewController.swift */,
+				62984C142189FF220082121E /* SignUpViewController+UITextFieldDelegate.swift */,
+				62984C122189FC940082121E /* SignUpViewController+KeyboardHandling.swift */,
 				32F5182021889E8D00E026F3 /* SignUpViewController.xib */,
 			);
 			path = SignUp;
@@ -207,8 +222,8 @@
 		62984BFF2189BE900082121E /* UserTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				62984C002189BE900082121E /* UserTableViewCell.xib */,
 				62984C012189BE900082121E /* UserTableViewCell.swift */,
+				62984C002189BE900082121E /* UserTableViewCell.xib */,
 			);
 			path = UserTableViewCell;
 			sourceTree = "<group>";
@@ -299,9 +314,9 @@
 		DABBB5F22189EBC5004E6793 /* RecordsViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DABBB5F52189EBC5004E6793 /* RecordsViewController.swift */,
 				DABBB5F32189EBC5004E6793 /* RecordsViewController+TableView.swift */,
 				DABBB5F42189EBC5004E6793 /* RecordsViewController+SetupViews.swift */,
-				DABBB5F52189EBC5004E6793 /* RecordsViewController.swift */,
 			);
 			path = RecordsViewController;
 			sourceTree = "<group>";
@@ -437,6 +452,7 @@
 			files = (
 				62984C032189BE900082121E /* UserTableViewCell.swift in Sources */,
 				692D30D821823EDC00BB5420 /* Reason.swift in Sources */,
+				62984C17218A026C0082121E /* SignInViewController+KeyboardHandling.swift in Sources */,
 				DABBB5EF2189EB80004E6793 /* UIViewController+Constraints.swift in Sources */,
 				CE75588F21886DEF00E3E254 /* AddRecordViewController.swift in Sources */,
 				DABBB5FF2189EC3F004E6793 /* RLDescriptionView.swift in Sources */,
@@ -447,10 +463,13 @@
 				62984BF92189B8120082121E /* UIView+Shake.swift in Sources */,
 				62984BFD2189BBBC0082121E /* Dactionary+Users.swift in Sources */,
 				62984C0F2189C8C60082121E /* KituraTabBarController.swift in Sources */,
+				62984C112189F6230082121E /* UIViewController+KeyboardHandler.swift in Sources */,
 				692D30DB21823EDC00BB5420 /* Record.swift in Sources */,
 				692D30B421822FBB00BB5420 /* AppDelegate.swift in Sources */,
 				32F5180C218856A900E026F3 /* Service.swift in Sources */,
 				32F5181C218879C800E026F3 /* WelcomeViewController.swift in Sources */,
+				62984C152189FF220082121E /* SignUpViewController+UITextFieldDelegate.swift in Sources */,
+				62984C132189FC940082121E /* SignUpViewController+KeyboardHandling.swift in Sources */,
 				DABBB5F72189EBC5004E6793 /* RecordsViewController+SetupViews.swift in Sources */,
 				32F517FE218786CB00E026F3 /* Service+GET.swift in Sources */,
 				62984BF72189B11F0082121E /* UIViewController+ShowErrorAlert.swift in Sources */,
@@ -460,6 +479,7 @@
 				62984BE82189A9B80082121E /* UserListViewController.swift in Sources */,
 				62984BFB2189B88E0082121E /* UserListViewController+TableView.swift in Sources */,
 				692D30DA21823EDC00BB5420 /* User.swift in Sources */,
+				62984C19218A02830082121E /* SignInViewController+UITextFieldDelegate.swift in Sources */,
 				62984C0A2189C7D20082121E /* UserListViewController+FetchUsers.swift in Sources */,
 				32F5181E2188939800E026F3 /* UIVew+Animation.swift in Sources */,
 				62984C062189BFE90082121E /* Constants+NibNames.swift in Sources */,
