@@ -58,7 +58,7 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 20
+        return 25
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -70,6 +70,10 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
         
         let user = sectionValues[indexPath.row]
       //here go to records
+        let records = RecordsViewController()
+        records.user = user
+        self.navigationController?.pushViewController(records, animated: true)
+        
     }
     
 }

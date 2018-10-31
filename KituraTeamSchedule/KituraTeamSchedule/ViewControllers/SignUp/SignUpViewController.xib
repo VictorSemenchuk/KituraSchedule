@@ -13,6 +13,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="KituraTeamSchedule" customModuleProvider="target">
             <connections>
                 <outlet property="doneButton" destination="4Gr-hl-b5o" id="fKv-J7-oYU"/>
+                <outlet property="emailTextField" destination="xes-BZ-ky8" id="5e7-zJ-20h"/>
+                <outlet property="firstNameTextField" destination="bnJ-Wp-I92" id="oYx-tE-y0R"/>
+                <outlet property="lastNameTextField" destination="VRb-pF-SNF" id="d2i-G6-D5d"/>
+                <outlet property="passwordTextField" destination="LNb-Iu-T4y" id="5za-gH-xNW"/>
+                <outlet property="scrollView" destination="zYk-ol-GWO" id="pm2-WU-1b0"/>
                 <outlet property="view" destination="kG0-aG-7oN" id="2lD-23-iec"/>
             </connections>
         </placeholder>
@@ -40,7 +45,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xes-BZ-ky8">
-                            <rect key="frame" x="30" y="216" width="315" height="50"/>
+                            <rect key="frame" x="30" y="215" width="315" height="50"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
@@ -55,15 +60,15 @@
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="bnJ-Wp-I92" secondAttribute="trailing" constant="30" id="2Nh-dr-7EI"/>
                         <constraint firstItem="xes-BZ-ky8" firstAttribute="height" secondItem="bnJ-Wp-I92" secondAttribute="height" id="4o9-pi-f0I"/>
-                        <constraint firstAttribute="bottom" secondItem="LNb-Iu-T4y" secondAttribute="bottom" constant="50" id="93w-zi-HMM"/>
+                        <constraint firstAttribute="bottom" secondItem="LNb-Iu-T4y" secondAttribute="bottom" constant="10" id="93w-zi-HMM"/>
                         <constraint firstItem="xes-BZ-ky8" firstAttribute="trailing" secondItem="bnJ-Wp-I92" secondAttribute="trailing" id="DJw-fP-sot"/>
                         <constraint firstItem="VRb-pF-SNF" firstAttribute="top" secondItem="bnJ-Wp-I92" secondAttribute="bottom" constant="8" id="Hm7-Dj-cXK"/>
-                        <constraint firstItem="LNb-Iu-T4y" firstAttribute="top" secondItem="xes-BZ-ky8" secondAttribute="bottom" constant="8" id="LF5-pS-G0p"/>
+                        <constraint firstItem="LNb-Iu-T4y" firstAttribute="top" secondItem="xes-BZ-ky8" secondAttribute="bottom" constant="9" id="LF5-pS-G0p"/>
                         <constraint firstItem="VRb-pF-SNF" firstAttribute="leading" secondItem="bnJ-Wp-I92" secondAttribute="leading" id="LGo-dt-d0y"/>
                         <constraint firstItem="bnJ-Wp-I92" firstAttribute="top" secondItem="zYk-ol-GWO" secondAttribute="top" constant="100" id="QkE-Mi-YCZ"/>
                         <constraint firstItem="bnJ-Wp-I92" firstAttribute="leading" secondItem="zYk-ol-GWO" secondAttribute="leading" constant="30" id="VjX-Jz-mnM"/>
                         <constraint firstItem="LNb-Iu-T4y" firstAttribute="trailing" secondItem="bnJ-Wp-I92" secondAttribute="trailing" id="XGP-UC-OjZ"/>
-                        <constraint firstItem="xes-BZ-ky8" firstAttribute="top" secondItem="VRb-pF-SNF" secondAttribute="bottom" constant="8" id="dn6-pw-w3l"/>
+                        <constraint firstItem="xes-BZ-ky8" firstAttribute="top" secondItem="VRb-pF-SNF" secondAttribute="bottom" constant="7" id="dn6-pw-w3l"/>
                         <constraint firstItem="xes-BZ-ky8" firstAttribute="leading" secondItem="bnJ-Wp-I92" secondAttribute="leading" id="hnC-4i-y0U"/>
                         <constraint firstItem="VRb-pF-SNF" firstAttribute="height" secondItem="bnJ-Wp-I92" secondAttribute="height" id="lg0-z0-01Z"/>
                         <constraint firstItem="LNb-Iu-T4y" firstAttribute="leading" secondItem="bnJ-Wp-I92" secondAttribute="leading" id="qwc-QS-nGO"/>

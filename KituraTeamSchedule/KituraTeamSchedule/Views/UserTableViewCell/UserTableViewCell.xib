@@ -68,6 +68,7 @@
                 <outlet property="fulnameLabel" destination="iST-Ht-9fS" id="50V-n4-csx"/>
                 <outlet property="photImageView" destination="CrT-Sm-qrc" id="L6b-2o-OI5"/>
                 <outlet property="shortNameLabel" destination="wz5-ao-CtA" id="Xlm-Z1-Q07"/>
+                <outlet property="userEmailLabel" destination="Ghi-4c-NLV" id="nXk-vi-lT5"/>
             </connections>
             <point key="canvasLocation" x="20" y="72.413793103448285"/>
         </tableViewCell>

@@ -15,7 +15,7 @@ class UserTableViewCell: UITableViewCell {
     @IBOutlet weak var photImageView: UIImageView!
     @IBOutlet weak var shortNameLabel: UILabel!
     @IBOutlet weak var fulnameLabel: UILabel!
-
+    @IBOutlet weak var userEmailLabel: UILabel!
     
     var cellUser: User?
     
@@ -54,6 +54,7 @@ class UserTableViewCell: UITableViewCell {
     func configureViewWithUser(user: User) {
         self.fulnameLabel.text = user.fullName
         self.shortNameLabel.text = user.initials
+        self.userEmailLabel.text = user.email
     }
     
     /**

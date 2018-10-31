@@ -46,7 +46,6 @@ class Navigation {
         let newRootVC: UIViewController
         
         if rootVCType == .TabBar {
-//            Navigation.fetchCurrentUser()
             newRootVC = Navigation.configureTabBar()
         } else {
             newRootVC = WelcomeViewController()
