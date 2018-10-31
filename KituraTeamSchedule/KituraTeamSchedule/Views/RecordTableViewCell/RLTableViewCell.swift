@@ -36,7 +36,7 @@ class RLTableViewCell: UITableViewCell {
         self.detailedView.dayLable.text = String.string(with: "MMM", from: dataRow.startDate)
         self.descriptionView.time.text = "\(String.string(with: "HH:mm", from: dataRow.startDate)) - \(String.string(with: "HH:mm", from: dataRow.endDate))"
         self.descriptionView.reason.text = dataRow.reason?.title
-        self.descriptionView.descriptionLabel.text = "Some description"
+        self.descriptionView.descriptionLabel.text = dataRow.details
     }
     
     
