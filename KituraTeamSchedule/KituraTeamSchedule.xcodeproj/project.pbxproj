@@ -19,7 +19,6 @@
 		32F5182221889E8D00E026F3 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F5182021889E8D00E026F3 /* SignUpViewController.xib */; };
 		32F5182321889E8D00E026F3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F5182121889E8D00E026F3 /* SignUpViewController.swift */; };
 		692D30B421822FBB00BB5420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30B321822FBB00BB5420 /* AppDelegate.swift */; };
-		692D30B621822FBB00BB5420 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30B521822FBB00BB5420 /* ViewController.swift */; };
 		692D30B921822FBB00BB5420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692D30B721822FBB00BB5420 /* Main.storyboard */; };
 		692D30BB21822FBC00BB5420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 692D30BA21822FBC00BB5420 /* Assets.xcassets */; };
 		692D30BE21822FBC00BB5420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692D30BC21822FBC00BB5420 /* LaunchScreen.storyboard */; };
@@ -33,8 +32,16 @@
 		CE4B9D8B21888D8C007BCC82 /* RLDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B9D8A21888D8C007BCC82 /* RLDescriptionView.swift */; };
 		CE4F82462188503300EC860E /* RLTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F82442188503300EC860E /* RLTableViewCell.swift */; };
 		CE4F82472188503300EC860E /* RLTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4F82452188503300EC860E /* RLTableViewCell.xib */; };
-		CE75588D21886B8D00E3E254 /* RLTableViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75588C21886B8D00E3E254 /* RLTableViewConfiguration.swift */; };
 		CE75588F21886DEF00E3E254 /* AddRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75588E21886DEF00E3E254 /* AddRecordViewController.swift */; };
+		DAB7585721899A9C00570D73 /* RecordsViewController+SetupViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7585621899A9C00570D73 /* RecordsViewController+SetupViews.swift */; };
+		DAB7585921899AF200570D73 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7585821899AF200570D73 /* RecordsViewController.swift */; };
+		DAB7585C21899CC800570D73 /* UIViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7585B21899CC800570D73 /* UIViewController+Constraints.swift */; };
+		DAB7585E21899CE000570D73 /* RecordsViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7585D21899CE000570D73 /* RecordsViewController+TableView.swift */; };
+		DAB7586221899D9A00570D73 /* CAGradientLayer+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7586121899D9A00570D73 /* CAGradientLayer+Gradient.swift */; };
+		DAB7586421899DDB00570D73 /* UINavigationBar+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7586321899DDB00570D73 /* UINavigationBar+Gradient.swift */; };
+		DABBB5E02189ADBF004E6793 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBB5DF2189ADBF004E6793 /* UIViewController+Alert.swift */; };
+		DABBB5E32189AE4F004E6793 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBB5E12189AE4F004E6793 /* Date+Format.swift */; };
+		DABBB5E42189AE4F004E6793 /* String+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBB5E22189AE4F004E6793 /* String+Format.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +60,6 @@
 		4F9518F0CBA3EEABD1170329 /* Pods-KituraTeamSchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KituraTeamSchedule.release.xcconfig"; path = "Pods/Target Support Files/Pods-KituraTeamSchedule/Pods-KituraTeamSchedule.release.xcconfig"; sourceTree = "<group>"; };
 		692D30B021822FBB00BB5420 /* KituraTeamSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KituraTeamSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		692D30B321822FBB00BB5420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		692D30B521822FBB00BB5420 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		692D30B821822FBB00BB5420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		692D30BA21822FBC00BB5420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		692D30BD21822FBC00BB5420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,8 +74,16 @@
 		CE4B9D8A21888D8C007BCC82 /* RLDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLDescriptionView.swift; sourceTree = "<group>"; };
 		CE4F82442188503300EC860E /* RLTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLTableViewCell.swift; sourceTree = "<group>"; };
 		CE4F82452188503300EC860E /* RLTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RLTableViewCell.xib; sourceTree = "<group>"; };
-		CE75588C21886B8D00E3E254 /* RLTableViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLTableViewConfiguration.swift; sourceTree = "<group>"; };
 		CE75588E21886DEF00E3E254 /* AddRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordViewController.swift; sourceTree = "<group>"; };
+		DAB7585621899A9C00570D73 /* RecordsViewController+SetupViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordsViewController+SetupViews.swift"; sourceTree = "<group>"; };
+		DAB7585821899AF200570D73 /* RecordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
+		DAB7585B21899CC800570D73 /* UIViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Constraints.swift"; sourceTree = "<group>"; };
+		DAB7585D21899CE000570D73 /* RecordsViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordsViewController+TableView.swift"; sourceTree = "<group>"; };
+		DAB7586121899D9A00570D73 /* CAGradientLayer+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Gradient.swift"; sourceTree = "<group>"; };
+		DAB7586321899DDB00570D73 /* UINavigationBar+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Gradient.swift"; sourceTree = "<group>"; };
+		DABBB5DF2189ADBF004E6793 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		DABBB5E12189AE4F004E6793 /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
+		DABBB5E22189AE4F004E6793 /* String+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Format.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +112,7 @@
 		32F5181121885BF900E026F3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				DAB7585521899A4900570D73 /* RecordsViewController */,
 				32F518182188738C00E026F3 /* Welcome */,
 				32F518172188737D00E026F3 /* SignIn */,
 				32F5182421889E9B00E026F3 /* SignUp */,
@@ -161,13 +176,12 @@
 		692D30B221822FBB00BB5420 /* KituraTeamSchedule */ = {
 			isa = PBXGroup;
 			children = (
+				692D30B321822FBB00BB5420 /* AppDelegate.swift */,
+				DAB7585A21899CB900570D73 /* Extension */,
 				692D30D221823EDC00BB5420 /* Models */,
 				32F51800218786D600E026F3 /* Service */,
 				32F5181F218893B800E026F3 /* Categories */,
-				692D30B321822FBB00BB5420 /* AppDelegate.swift */,
-				692D30B521822FBB00BB5420 /* ViewController.swift */,
 				32F5181121885BF900E026F3 /* ViewControllers */,
-				CE75588C21886B8D00E3E254 /* RLTableViewConfiguration.swift */,
 				CE75588E21886DEF00E3E254 /* AddRecordViewController.swift */,
 				CE4F823A21884F3900EC860E /* CS */,
 				692D30B721822FBB00BB5420 /* Main.storyboard */,
@@ -216,6 +230,29 @@
 				CE4B9D8A21888D8C007BCC82 /* RLDescriptionView.swift */,
 			);
 			path = CS;
+			sourceTree = "<group>";
+		};
+		DAB7585521899A4900570D73 /* RecordsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7585821899AF200570D73 /* RecordsViewController.swift */,
+				DAB7585621899A9C00570D73 /* RecordsViewController+SetupViews.swift */,
+				DAB7585D21899CE000570D73 /* RecordsViewController+TableView.swift */,
+			);
+			path = RecordsViewController;
+			sourceTree = "<group>";
+		};
+		DAB7585A21899CB900570D73 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DABBB5DF2189ADBF004E6793 /* UIViewController+Alert.swift */,
+				DAB7585B21899CC800570D73 /* UIViewController+Constraints.swift */,
+				DAB7586121899D9A00570D73 /* CAGradientLayer+Gradient.swift */,
+				DAB7586321899DDB00570D73 /* UINavigationBar+Gradient.swift */,
+				DABBB5E12189AE4F004E6793 /* Date+Format.swift */,
+				DABBB5E22189AE4F004E6793 /* String+Format.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,25 +372,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				692D30D821823EDC00BB5420 /* Reason.swift in Sources */,
-				692D30B621822FBB00BB5420 /* ViewController.swift in Sources */,
 				CE75588F21886DEF00E3E254 /* AddRecordViewController.swift in Sources */,
 				CE4F82462188503300EC860E /* RLTableViewCell.swift in Sources */,
 				CE4B9D8B21888D8C007BCC82 /* RLDescriptionView.swift in Sources */,
 				692D30DC21823EDC00BB5420 /* Color.swift in Sources */,
+				DABBB5E02189ADBF004E6793 /* UIViewController+Alert.swift in Sources */,
+				DABBB5E42189AE4F004E6793 /* String+Format.swift in Sources */,
 				CE4B9D8921888D55007BCC82 /* RLDetailedView.swift in Sources */,
 				692D30DB21823EDC00BB5420 /* Record.swift in Sources */,
 				692D30B421822FBB00BB5420 /* AppDelegate.swift in Sources */,
+				DAB7585921899AF200570D73 /* RecordsViewController.swift in Sources */,
+				DAB7585C21899CC800570D73 /* UIViewController+Constraints.swift in Sources */,
 				32F5180C218856A900E026F3 /* Service.swift in Sources */,
+				DABBB5E32189AE4F004E6793 /* Date+Format.swift in Sources */,
 				32F5181C218879C800E026F3 /* WelcomeViewController.swift in Sources */,
 				32F517FE218786CB00E026F3 /* Service+GET.swift in Sources */,
 				32F5180A21884D6600E026F3 /* Service+Authentication.swift in Sources */,
 				32F5180F21885BEF00E026F3 /* SignInViewController.swift in Sources */,
 				692D30DA21823EDC00BB5420 /* User.swift in Sources */,
+				DAB7586221899D9A00570D73 /* CAGradientLayer+Gradient.swift in Sources */,
 				32F5181E2188939800E026F3 /* UIVew+Animation.swift in Sources */,
-				CE75588D21886B8D00E3E254 /* RLTableViewConfiguration.swift in Sources */,
+				DAB7585E21899CE000570D73 /* RecordsViewController+TableView.swift in Sources */,
 				692D30D921823EDC00BB5420 /* Cred.swift in Sources */,
 				32F517FD218786CB00E026F3 /* Service+POST.swift in Sources */,
 				32F5182321889E8D00E026F3 /* SignUpViewController.swift in Sources */,
+				DAB7585721899A9C00570D73 /* RecordsViewController+SetupViews.swift in Sources */,
+				DAB7586421899DDB00570D73 /* UINavigationBar+Gradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,5 +14,6 @@ class RLDescriptionView: UIView {
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var reason: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+
     
 }

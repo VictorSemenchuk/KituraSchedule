@@ -1,17 +1,21 @@
 //
-//  RLTableViewConfiguration.swift
+//  RecordsViewController+SetupViews.swift
 //  KituraTeamSchedule
 //
-//  Created by User on 10/30/18.
+//  Created by Viktar Semianchuk on 10/31/18.
 //  Copyright © 2018 KituraTeam. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-extension ViewController {
+extension RecordsViewController {
     
-    func setUpTableView() -> UITableView {
+    func setupViews() {
+        self.tableView = self.setUpTableView()
+        self.createAddBttn()
+    }
+    
+    private func setUpTableView() -> UITableView {
         let tableView = UITableView(frame: .zero, style: UITableViewStyle.plain)
         tableView.backgroundColor = UIColor.white
         tableView.register(UINib.init(nibName: "\(RLTableViewCell.self)", bundle: nil), forCellReuseIdentifier: kCellId)
@@ -29,6 +33,12 @@ extension ViewController {
         tableView.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 0).isActive = true
         tableView.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: 0).isActive = true
         tableView.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: 0).isActive = true
+    }
+    
+    func createAddBttn() {
+        let rightBarButtonItem = UIBarButtonItem(title: "Add", style: .done, target: self, action: #selector(addNewRecordToTimesTable))
+        rightBarButtonItem.tintColor = UIColor.white
+        self.navigationItem.rightBarButtonItem = rightBarButtonItem
     }
     
 }

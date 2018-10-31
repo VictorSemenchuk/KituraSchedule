@@ -14,10 +14,12 @@ class RLTableViewCell: UITableViewCell {
     
     @IBOutlet weak var detailedView: RLDetailedView!
     @IBOutlet weak var descriptionView: RLDescriptionView!
-    
+    @IBOutlet weak var reasonContainerView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        reasonContainerView.layer.cornerRadius = 10
+        reasonContainerView.clipsToBounds = true
     }
     
     override func prepareForReuse() {
@@ -29,12 +31,12 @@ class RLTableViewCell: UITableViewCell {
         self.descriptionView.descriptionLabel.text = nil
     }
     
-    func fillTheCell(_ dataRow: [String:String]) {
-        self.detailedView.dateLable.text = dataRow["date"]
-        self.detailedView.dayLable.text = dataRow["day"]
-        self.descriptionView.time.text = dataRow["time"]
-        self.descriptionView.reason.text = dataRow["reason"]
-        self.descriptionView.descriptionLabel.text = dataRow["descr"]
+    func fillTheCell(_ dataRow: Record) {
+        self.detailedView.dateLable.text = String.string(with: "d", from: dataRow.startDate)
+        self.detailedView.dayLable.text = String.string(with: "MMM", from: dataRow.startDate)
+        self.descriptionView.time.text = "\(String.string(with: "HH:mm", from: dataRow.startDate)) - \(String.string(with: "HH:mm", from: dataRow.endDate))"
+        self.descriptionView.reason.text = dataRow.reason?.title
+        self.descriptionView.descriptionLabel.text = "Some description"
     }
     
     
