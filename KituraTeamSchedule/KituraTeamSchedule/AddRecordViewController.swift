@@ -44,7 +44,6 @@ class AddRecordViewController: UIViewController {
         self.pickerView = self.createPickerView()
         self.datePicker = self.createDatePickerView()
         self.reasonTextField = self.createReasonTextField()
-        
         if let personalData = self.personalTimeTable {
             _ = personalData.map { print($0) }
         }

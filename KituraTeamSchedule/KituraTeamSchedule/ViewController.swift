@@ -36,8 +36,9 @@ class ViewController: UIViewController {
     }
     
     @objc func addNewRecordToTimesTable(sender: UIButton) {
-        let addrecordVC = AddRecordViewController.init(with: nil, presentation: .pushed, nibName: nil, bundle: nil)
-        self.navigationController?.pushViewController(addrecordVC, animated: true)
+        let vc = AddrecordVC.init(nibName: "AddrecordVC", bundle: nil)
+//        let exVC = ExVC.init(nibName: "ExVC", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func generateDataSource() -> [[String:String]] {
@@ -75,8 +76,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let addrecordVC = AddRecordViewController.init(with: self.dataSource[indexPath.row], presentation: .presentedModally, nibName: nil, bundle: nil)
-        self.present(addrecordVC, animated: true, completion: nil)
+        let vc = AddrecordVC.init(nibName: "AddrecordVC", bundle: nil)
+//        let exVC = ExVC.init(nibName: "ExVC", bundle: nil)
+        self.present(vc, animated: true, completion: nil)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

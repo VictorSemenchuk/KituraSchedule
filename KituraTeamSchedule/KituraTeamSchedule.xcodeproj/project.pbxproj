@@ -29,6 +29,12 @@
 		692D30DB21823EDC00BB5420 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30D621823EDC00BB5420 /* Record.swift */; };
 		692D30DC21823EDC00BB5420 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30D721823EDC00BB5420 /* Color.swift */; };
 		7467FEF4A1461D5059EFB5F5 /* Pods_KituraTeamSchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041672A5B435806AB3E9516B /* Pods_KituraTeamSchedule.framework */; };
+		CE0FF5282189A73D00563BFC /* AddrecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FF5262189A73D00563BFC /* AddrecordVC.swift */; };
+		CE0FF5342189E3D500563BFC /* ExVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FF5322189E3D500563BFC /* ExVC.swift */; };
+		CE0FF5352189E3D500563BFC /* ExVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0FF5332189E3D500563BFC /* ExVC.xib */; };
+		CE0FF5382189EF8200563BFC /* KPIDateSetter.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0FF5362189EF8200563BFC /* KPIDateSetter.xib */; };
+		CE0FF5392189EF8200563BFC /* KPIDateSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FF5372189EF8200563BFC /* KPIDateSetter.swift */; };
+		CE0FF53B2189FA7600563BFC /* AddrecordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0FF53A2189FA7600563BFC /* AddrecordVC.xib */; };
 		CE4B9D8921888D55007BCC82 /* RLDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B9D8821888D55007BCC82 /* RLDetailedView.swift */; };
 		CE4B9D8B21888D8C007BCC82 /* RLDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B9D8A21888D8C007BCC82 /* RLDescriptionView.swift */; };
 		CE4F82462188503300EC860E /* RLTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F82442188503300EC860E /* RLTableViewCell.swift */; };
@@ -64,6 +70,12 @@
 		692D30D621823EDC00BB5420 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		692D30D721823EDC00BB5420 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		CD3CA6494FE8361A28CA141B /* Pods-KituraTeamSchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KituraTeamSchedule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KituraTeamSchedule/Pods-KituraTeamSchedule.debug.xcconfig"; sourceTree = "<group>"; };
+		CE0FF5262189A73D00563BFC /* AddrecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddrecordVC.swift; sourceTree = "<group>"; };
+		CE0FF5322189E3D500563BFC /* ExVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExVC.swift; sourceTree = "<group>"; };
+		CE0FF5332189E3D500563BFC /* ExVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExVC.xib; sourceTree = "<group>"; };
+		CE0FF5362189EF8200563BFC /* KPIDateSetter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KPIDateSetter.xib; sourceTree = "<group>"; };
+		CE0FF5372189EF8200563BFC /* KPIDateSetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KPIDateSetter.swift; sourceTree = "<group>"; };
+		CE0FF53A2189FA7600563BFC /* AddrecordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddrecordVC.xib; sourceTree = "<group>"; };
 		CE4B9D8821888D55007BCC82 /* RLDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLDetailedView.swift; sourceTree = "<group>"; };
 		CE4B9D8A21888D8C007BCC82 /* RLDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLDescriptionView.swift; sourceTree = "<group>"; };
 		CE4F82442188503300EC860E /* RLTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLTableViewCell.swift; sourceTree = "<group>"; };
@@ -166,9 +178,15 @@
 				32F5181F218893B800E026F3 /* Categories */,
 				692D30B321822FBB00BB5420 /* AppDelegate.swift */,
 				692D30B521822FBB00BB5420 /* ViewController.swift */,
-				32F5181121885BF900E026F3 /* ViewControllers */,
 				CE75588C21886B8D00E3E254 /* RLTableViewConfiguration.swift */,
+				32F5181121885BF900E026F3 /* ViewControllers */,
 				CE75588E21886DEF00E3E254 /* AddRecordViewController.swift */,
+				CE0FF5322189E3D500563BFC /* ExVC.swift */,
+				CE0FF5332189E3D500563BFC /* ExVC.xib */,
+				CE0FF5262189A73D00563BFC /* AddrecordVC.swift */,
+				CE0FF53A2189FA7600563BFC /* AddrecordVC.xib */,
+				CE0FF5372189EF8200563BFC /* KPIDateSetter.swift */,
+				CE0FF5362189EF8200563BFC /* KPIDateSetter.xib */,
 				CE4F823A21884F3900EC860E /* CS */,
 				692D30B721822FBB00BB5420 /* Main.storyboard */,
 				692D30BA21822FBC00BB5420 /* Assets.xcassets */,
@@ -281,10 +299,13 @@
 				32F5181021885BEF00E026F3 /* SignInViewController.xib in Resources */,
 				32F5181A2188793E00E026F3 /* WelcomeViewController.xib in Resources */,
 				32F5182221889E8D00E026F3 /* SignUpViewController.xib in Resources */,
+				CE0FF5352189E3D500563BFC /* ExVC.xib in Resources */,
+				CE0FF5382189EF8200563BFC /* KPIDateSetter.xib in Resources */,
 				692D30BE21822FBC00BB5420 /* LaunchScreen.storyboard in Resources */,
 				CE4F82472188503300EC860E /* RLTableViewCell.xib in Resources */,
 				692D30BB21822FBC00BB5420 /* Assets.xcassets in Resources */,
 				692D30B921822FBB00BB5420 /* Main.storyboard in Resources */,
+				CE0FF53B2189FA7600563BFC /* AddrecordVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,9 +359,11 @@
 				692D30B621822FBB00BB5420 /* ViewController.swift in Sources */,
 				CE75588F21886DEF00E3E254 /* AddRecordViewController.swift in Sources */,
 				CE4F82462188503300EC860E /* RLTableViewCell.swift in Sources */,
+				CE0FF5392189EF8200563BFC /* KPIDateSetter.swift in Sources */,
 				CE4B9D8B21888D8C007BCC82 /* RLDescriptionView.swift in Sources */,
 				692D30DC21823EDC00BB5420 /* Color.swift in Sources */,
 				CE4B9D8921888D55007BCC82 /* RLDetailedView.swift in Sources */,
+				CE0FF5342189E3D500563BFC /* ExVC.swift in Sources */,
 				692D30DB21823EDC00BB5420 /* Record.swift in Sources */,
 				692D30B421822FBB00BB5420 /* AppDelegate.swift in Sources */,
 				32F5180C218856A900E026F3 /* Service.swift in Sources */,
@@ -348,6 +371,7 @@
 				32F517FE218786CB00E026F3 /* Service+GET.swift in Sources */,
 				32F5180A21884D6600E026F3 /* Service+Authentication.swift in Sources */,
 				32F5180F21885BEF00E026F3 /* SignInViewController.swift in Sources */,
+				CE0FF5282189A73D00563BFC /* AddrecordVC.swift in Sources */,
 				692D30DA21823EDC00BB5420 /* User.swift in Sources */,
 				32F5181E2188939800E026F3 /* UIVew+Animation.swift in Sources */,
 				CE75588D21886B8D00E3E254 /* RLTableViewConfiguration.swift in Sources */,
