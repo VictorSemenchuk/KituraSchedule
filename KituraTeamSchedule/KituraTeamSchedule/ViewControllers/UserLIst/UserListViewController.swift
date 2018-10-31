@@ -52,7 +52,15 @@ class UserListViewController: UIViewController {
     }
     
     @objc func logoutUser(){
-        Navigation.changeRootVCTo(rootVCType: .Welcome)
+        UIView.animate(withDuration: 0.4, animations: {
+            self.tabBarController?.tabBar.alpha = 0
+            self.view.alpha = 0
+            self.navigationController?.navigationBar.alpha = 0
+        }) { (isFinished) in
+            if isFinished {
+                Navigation.changeRootVCTo(rootVCType: .Welcome)
+            }
+        }
     }
 
     @objc private func refreshContacts(refreshControl: UIRefreshControl) {

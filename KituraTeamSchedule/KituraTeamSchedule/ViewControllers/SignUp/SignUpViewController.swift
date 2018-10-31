@@ -10,6 +10,12 @@ import UIKit
 class SignUpViewController: UIViewController {
     
     @IBOutlet weak var doneButton: UIButton!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     
     //MARK: - Actions
@@ -20,12 +26,29 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //textField Delegates
+        self.firstNameTextField.delegate = self
+        self.lastNameTextField.delegate = self
+        self.emailTextField.delegate = self
+        self.passwordTextField.delegate = self
+        
+        //setup views
         self.setupViews()
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.registerForKeyboardNotifications()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.removeObserver()
     }
 
+    
     func setupViews() {
-        
         //barButtonItems
         let leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(dismissController))
         self.navigationItem.leftBarButtonItem = leftBarButtonItem
@@ -36,15 +59,4 @@ class SignUpViewController: UIViewController {
     @objc func dismissController() {
         self.dismiss(animated: true, completion: nil)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

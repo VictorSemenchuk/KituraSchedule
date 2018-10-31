@@ -14,6 +14,7 @@ class RecordsViewController: UIViewController {
     
     var tableView: UITableView?
     var dataSource: [Record] = []
+    var user: User?
     
     //MARK:- Lifecycle
     
@@ -45,7 +46,13 @@ class RecordsViewController: UIViewController {
     }
     
     func generateDataSource() {
-        Service.getRecordsByUserID(userId: 1) { [weak self] (records, error) in
+        var id = 1
+        if let user = self.user {
+            id = user.id
+            self.navigationItem.rightBarButtonItem = nil
+        }
+        
+        Service.getRecordsByUserID(userId: id) { [weak self] (records, error) in
             DispatchQueue.main.async {
                 guard let strongSelf = self else {
                     return
