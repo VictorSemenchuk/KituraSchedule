@@ -11,10 +11,13 @@ let package = Package(
       .package(url: "https://github.com/IBM-Swift/Health.git", from: "1.0.0"),
       .package(url: "https://github.com/IBM-Swift/Swift-Kuery-ORM.git", .upToNextMinor(from: "0.3.1")),
       .package(url: "https://github.com/IBM-Swift/Swift-Kuery-PostgreSQL.git", from: "1.2.0"),
+      .package(url: "https://github.com/IBM-Swift/Kitura-CredentialsHTTP.git", from: "2.1.0"),
+      .package(url: "https://github.com/IBM-Swift/Kitura-Session.git", from: "3.2.0"),
+      .package(url: "https://github.com/IBM-Swift/HeliumLogger.git", from: "1.7.3")
     ],
     targets: [
       .target(name: "KituraServer", dependencies: [ .target(name: "Application"), "Kitura" , "HeliumLogger"]),
-      .target(name: "Application", dependencies: [ "Kitura", "CloudEnvironment","SwiftMetrics","Health", "SwiftKueryORM", "SwiftKueryPostgreSQL" ]),
+      .target(name: "Application", dependencies: [ "Kitura", "CloudEnvironment","SwiftMetrics","Health", "SwiftKueryORM", "SwiftKueryPostgreSQL", "CredentialsHTTP", "KituraSession"]),
 
       .testTarget(name: "ApplicationTests" , dependencies: [.target(name: "Application"), "Kitura","HeliumLogger" ])
     ]

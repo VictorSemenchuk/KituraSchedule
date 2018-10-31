@@ -8,6 +8,9 @@ import Health
 import SwiftKuery
 import SwiftKueryORM
 import SwiftKueryPostgreSQL
+import CredentialsHTTP
+import Credentials
+import KituraSession
 
 public let projectPath = ConfigurationManager.BasePath.project.path
 public let health = Health()
@@ -15,6 +18,10 @@ public let health = Health()
 public class App {
     let router = Router()
     let cloudEnv = CloudEnv()
+    
+    let mySSLConfig =  SSLConfig(withChainFilePath: "/tmp/Creds/cert.pfx",
+                                 withPassword: "serverVITK1",
+                                 usingSelfSignedCerts: true)
     
     public init() throws {
         // Run the metrics initializer
@@ -35,6 +42,9 @@ public class App {
         
         let userHandler = UserHandler()
         userHandler.registerRoutes(for: router)
+        
+        let reasonHandler = ReasonHandler()
+        reasonHandler.registerRoutes(for: router)
     }
     
     private func setupDB() {

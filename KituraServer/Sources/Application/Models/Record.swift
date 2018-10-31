@@ -17,6 +17,7 @@ class RecordsTable: Table {
     let startDate = Column("startdate")
     let endDate = Column("enddate")
     let reasonId = Column("reasonid")
+    let details = Column("details")
 }
 
 struct Record: Model {
@@ -25,6 +26,7 @@ struct Record: Model {
     var startDate: Date
     var endDate: Date
     var reasonId: Int
+    var details: String
     
     var reason: Reason?
     
@@ -33,6 +35,7 @@ struct Record: Model {
         let reasonIdNumber = row["reasonid"] as? NSNumber,
         let userIdNumber = row["userid"] as? NSNumber,
         let startDate = row["startdate"] as? Date,
+        let details = row["details"] as? String,
         let endDate = row["enddate"] as? Date,
         let reason = Reason(row: row) else {
                 return nil
@@ -43,5 +46,6 @@ struct Record: Model {
         self.startDate = startDate
         self.endDate = endDate
         self.reason = reason
+        self.details = details
     }
 }

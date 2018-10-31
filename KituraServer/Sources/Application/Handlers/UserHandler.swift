@@ -10,6 +10,7 @@ import Kitura
 import SwiftKuery
 import SwiftKueryORM
 import SwiftKueryPostgreSQL
+import LoggerAPI
 
 class UserHandler: EntityHandlerProtocol {
     
@@ -18,7 +19,7 @@ class UserHandler: EntityHandlerProtocol {
     }
     
     func loadUsersHandler(completion: @escaping ([User]?, RequestError?) -> Void) {
-        let rows = querySelectQuery(with: allUsers())
+        let rows = fireSelectQuery(with: allUsers())
         if let rows = rows {
             var users = [User]()
             for row in rows {
@@ -35,6 +36,7 @@ class UserHandler: EntityHandlerProtocol {
     
     private func allUsers() -> Select {
         let recordTable = KTDatabase.usersTable
+        Log.info("Fetching all users")
         return Select(from: recordTable)
     }
     

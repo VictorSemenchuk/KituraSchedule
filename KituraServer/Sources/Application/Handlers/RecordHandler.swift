@@ -79,7 +79,7 @@ class RecordHandler: EntityHandlerProtocol {
     }
     
     func loadRecordsHandler(query: RecordQuery, completion: @escaping ([Record]?, RequestError?) -> Void) {
-        let rows = querySelectQuery(with: records(query: query))
+        let rows = fireSelectQuery(with: records(query: query))
         if let rows = rows {
             var records = [Record]()
             for row in rows {
