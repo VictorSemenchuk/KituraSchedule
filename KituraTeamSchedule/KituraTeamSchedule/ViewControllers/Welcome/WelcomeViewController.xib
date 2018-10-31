@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="KituraTeamSchedule" customModuleProvider="target">
+            <connections>
+                <outlet property="logoImageView" destination="bS4-3f-2f4" id="vC8-rE-gBH"/>
+                <outlet property="signInButton" destination="uwj-lQ-6jx" id="GXW-Xa-05g"/>
+                <outlet property="signUpButton" destination="1Kv-EK-QNA" id="0Ag-PL-UME"/>
+                <outlet property="view" destination="1Xd-d1-eeW" id="1wc-xW-Iln"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="1Xd-d1-eeW">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwj-lQ-6jx">
+                    <rect key="frame" x="0.0" y="547" width="375" height="60"/>
+                    <color key="backgroundColor" red="0.0" green="0.73123294120000004" blue="0.90271162989999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="vM1-YX-bC0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                    <color key="tintColor" red="0.084180437028408051" green="0.1360926628112793" blue="0.19841194152832031" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Sign In">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="showSignInHandlerWithSender:" destination="-1" eventType="touchUpInside" id="gX9-Bm-HrN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Kv-EK-QNA">
+                    <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                    <color key="backgroundColor" red="0.084180437029999999" green="0.13609266280000001" blue="0.19841194149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="Sign Up">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="showSignUpActionHandlerWithSender:" destination="-1" eventType="touchUpInside" id="03j-21-ab0"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kitura_logo.svg" translatesAutoresizingMaskIntoConstraints="NO" id="bS4-3f-2f4">
+                    <rect key="frame" x="50" y="230.5" width="275" height="206"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="bS4-3f-2f4" secondAttribute="height" multiplier="20:15" id="TxO-xI-qeW"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1Kv-EK-QNA" firstAttribute="height" secondItem="uwj-lQ-6jx" secondAttribute="height" id="59L-Bd-MI4"/>
+                <constraint firstItem="bS4-3f-2f4" firstAttribute="centerY" secondItem="1Xd-d1-eeW" secondAttribute="centerY" id="98y-kW-F4W"/>
+                <constraint firstItem="bS4-3f-2f4" firstAttribute="leading" secondItem="QoR-r4-JQV" secondAttribute="leading" constant="50" id="HtR-jJ-Wep"/>
+                <constraint firstItem="1Kv-EK-QNA" firstAttribute="leading" secondItem="uwj-lQ-6jx" secondAttribute="leading" id="KDO-0D-uiY"/>
+                <constraint firstItem="QoR-r4-JQV" firstAttribute="trailing" secondItem="bS4-3f-2f4" secondAttribute="trailing" constant="50" id="LYu-cf-4iY"/>
+                <constraint firstItem="uwj-lQ-6jx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bS4-3f-2f4" secondAttribute="bottom" constant="20" id="MaK-uV-kwo"/>
+                <constraint firstItem="QoR-r4-JQV" firstAttribute="bottom" secondItem="1Kv-EK-QNA" secondAttribute="bottom" id="QbF-Cm-HC1"/>
+                <constraint firstItem="1Kv-EK-QNA" firstAttribute="top" secondItem="uwj-lQ-6jx" secondAttribute="bottom" id="YdS-Cw-nas"/>
+                <constraint firstItem="uwj-lQ-6jx" firstAttribute="leading" secondItem="QoR-r4-JQV" secondAttribute="leading" id="c2D-v8-UA3"/>
+                <constraint firstItem="1Kv-EK-QNA" firstAttribute="trailing" secondItem="uwj-lQ-6jx" secondAttribute="trailing" id="efS-8I-iPo"/>
+                <constraint firstItem="uwj-lQ-6jx" firstAttribute="trailing" secondItem="QoR-r4-JQV" secondAttribute="trailing" id="w8a-H3-x9g"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="QoR-r4-JQV"/>
+            <point key="canvasLocation" x="138.40000000000001" y="142.57871064467767"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Kitura_logo.svg" width="1200" height="807"/>
+    </resources>
+</document>
