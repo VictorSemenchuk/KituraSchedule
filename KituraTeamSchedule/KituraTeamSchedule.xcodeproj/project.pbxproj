@@ -11,6 +11,13 @@
 		32F517FE218786CB00E026F3 /* Service+GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F517FB218786CB00E026F3 /* Service+GET.swift */; };
 		32F5180A21884D6600E026F3 /* Service+Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F5180921884D6600E026F3 /* Service+Authentication.swift */; };
 		32F5180C218856A900E026F3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F5180B218856A900E026F3 /* Service.swift */; };
+		32F5180F21885BEF00E026F3 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F5180D21885BEF00E026F3 /* SignInViewController.swift */; };
+		32F5181021885BEF00E026F3 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F5180E21885BEF00E026F3 /* SignInViewController.xib */; };
+		32F5181A2188793E00E026F3 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F518192188793E00E026F3 /* WelcomeViewController.xib */; };
+		32F5181C218879C800E026F3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F5181B218879C800E026F3 /* WelcomeViewController.swift */; };
+		32F5181E2188939800E026F3 /* UIVew+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F5181D2188939800E026F3 /* UIVew+Animation.swift */; };
+		32F5182221889E8D00E026F3 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F5182021889E8D00E026F3 /* SignUpViewController.xib */; };
+		32F5182321889E8D00E026F3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F5182121889E8D00E026F3 /* SignUpViewController.swift */; };
 		692D30B421822FBB00BB5420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30B321822FBB00BB5420 /* AppDelegate.swift */; };
 		692D30B621822FBB00BB5420 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30B521822FBB00BB5420 /* ViewController.swift */; };
 		692D30B921822FBB00BB5420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692D30B721822FBB00BB5420 /* Main.storyboard */; };
@@ -30,6 +37,13 @@
 		32F517FB218786CB00E026F3 /* Service+GET.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Service+GET.swift"; sourceTree = "<group>"; };
 		32F5180921884D6600E026F3 /* Service+Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service+Authentication.swift"; sourceTree = "<group>"; };
 		32F5180B218856A900E026F3 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		32F5180D21885BEF00E026F3 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		32F5180E21885BEF00E026F3 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		32F518192188793E00E026F3 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		32F5181B218879C800E026F3 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		32F5181D2188939800E026F3 /* UIVew+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVew+Animation.swift"; sourceTree = "<group>"; };
+		32F5182021889E8D00E026F3 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		32F5182121889E8D00E026F3 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4F9518F0CBA3EEABD1170329 /* Pods-KituraTeamSchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KituraTeamSchedule.release.xcconfig"; path = "Pods/Target Support Files/Pods-KituraTeamSchedule/Pods-KituraTeamSchedule.release.xcconfig"; sourceTree = "<group>"; };
 		692D30B021822FBB00BB5420 /* KituraTeamSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KituraTeamSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		692D30B321822FBB00BB5420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +83,51 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		32F5181121885BF900E026F3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				32F518182188738C00E026F3 /* Welcome */,
+				32F518172188737D00E026F3 /* SignIn */,
+				32F5182421889E9B00E026F3 /* SignUp */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		32F518172188737D00E026F3 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				32F5180D21885BEF00E026F3 /* SignInViewController.swift */,
+				32F5180E21885BEF00E026F3 /* SignInViewController.xib */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		32F518182188738C00E026F3 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				32F5181B218879C800E026F3 /* WelcomeViewController.swift */,
+				32F518192188793E00E026F3 /* WelcomeViewController.xib */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		32F5181F218893B800E026F3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				32F5181D2188939800E026F3 /* UIVew+Animation.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		32F5182421889E9B00E026F3 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				32F5182121889E8D00E026F3 /* SignUpViewController.swift */,
+				32F5182021889E8D00E026F3 /* SignUpViewController.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		692D30A721822FBB00BB5420 = {
 			isa = PBXGroup;
 			children = (
@@ -91,13 +150,15 @@
 			isa = PBXGroup;
 			children = (
 				692D30D221823EDC00BB5420 /* Models */,
+				32F51800218786D600E026F3 /* Service */,
+				32F5181F218893B800E026F3 /* Categories */,
 				692D30B321822FBB00BB5420 /* AppDelegate.swift */,
 				692D30B521822FBB00BB5420 /* ViewController.swift */,
+				32F5181121885BF900E026F3 /* ViewControllers */,
 				692D30B721822FBB00BB5420 /* Main.storyboard */,
 				692D30BA21822FBC00BB5420 /* Assets.xcassets */,
 				692D30BC21822FBC00BB5420 /* LaunchScreen.storyboard */,
 				692D30BF21822FBC00BB5420 /* Info.plist */,
-				32F51800218786D600E026F3 /* Service */,
 			);
 			path = KituraTeamSchedule;
 			sourceTree = "<group>";
@@ -191,6 +252,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32F5181021885BEF00E026F3 /* SignInViewController.xib in Resources */,
+				32F5181A2188793E00E026F3 /* WelcomeViewController.xib in Resources */,
+				32F5182221889E8D00E026F3 /* SignUpViewController.xib in Resources */,
 				692D30BE21822FBC00BB5420 /* LaunchScreen.storyboard in Resources */,
 				692D30BB21822FBC00BB5420 /* Assets.xcassets in Resources */,
 				692D30B921822FBB00BB5420 /* Main.storyboard in Resources */,
@@ -249,11 +313,15 @@
 				692D30DB21823EDC00BB5420 /* Record.swift in Sources */,
 				692D30B421822FBB00BB5420 /* AppDelegate.swift in Sources */,
 				32F5180C218856A900E026F3 /* Service.swift in Sources */,
+				32F5181C218879C800E026F3 /* WelcomeViewController.swift in Sources */,
 				32F517FE218786CB00E026F3 /* Service+GET.swift in Sources */,
 				32F5180A21884D6600E026F3 /* Service+Authentication.swift in Sources */,
+				32F5180F21885BEF00E026F3 /* SignInViewController.swift in Sources */,
 				692D30DA21823EDC00BB5420 /* User.swift in Sources */,
+				32F5181E2188939800E026F3 /* UIVew+Animation.swift in Sources */,
 				692D30D921823EDC00BB5420 /* Cred.swift in Sources */,
 				32F517FD218786CB00E026F3 /* Service+POST.swift in Sources */,
+				32F5182321889E8D00E026F3 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
