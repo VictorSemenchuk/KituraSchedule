@@ -15,6 +15,7 @@ class SignUpViewController: UIViewController {
     //MARK: - Actions
     
     @IBAction func doneActionHandler(_ sender: Any) {
+        Navigation.changeRootVCTo(rootVCType: .TabBar)
     }
     
     override func viewDidLoad() {

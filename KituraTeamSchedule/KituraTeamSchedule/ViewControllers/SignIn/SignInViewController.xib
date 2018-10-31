@@ -67,7 +67,7 @@
                 </scrollView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zg-Bk-LqH">
                     <rect key="frame" x="0.0" y="607" width="375" height="60"/>
-                    <color key="backgroundColor" red="0.0" green="0.72941176470588232" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.0" green="0.73123294115066528" blue="0.90271162986755371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="TwF-aF-4Xl"/>
                     </constraints>

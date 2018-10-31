@@ -20,7 +20,7 @@ class WelcomeViewController: UIViewController {
         let nav = UINavigationController(rootViewController: signIn)
 
         let buttonFrame = sender.frame
-        UIView.animateButton(button: sender, duration: 0.4, additionalCompletion: nil) {
+        UIView.animateButton(button: sender, duration: 0.2, additionalCompletion: nil) {
             self.present(nav, animated: true, completion: {
                 self.returnButtonRepresentation(button: sender, frame: buttonFrame)
             })
@@ -33,7 +33,7 @@ class WelcomeViewController: UIViewController {
         let nav = UINavigationController(rootViewController: signUp)
         
         let buttonFrame = sender.frame
-        UIView.animateButton(button: sender, duration: 0.4, additionalCompletion: nil) {
+        UIView.animateButton(button: sender, duration: 0.2, additionalCompletion: nil) {
             self.present(nav, animated: true, completion: {
                 self.returnButtonRepresentation(button: sender, frame: buttonFrame)
             })

@@ -42,4 +42,17 @@ struct User: Codable {
     
     var records: [Record]?
     var cred: Cred?
+    
+    //computed properties
+    var fullName: String {
+        return "\(self.firstName.capitalized) \(self.lastName.capitalized)"
+    }
+    
+    var initials: String {
+        guard let shortFirtsLetterName = self.firstName.first ,
+            let shortFirtsLetterLasttName = self.lastName.first  else { return "NN"}
+        
+        let initials = "\(String(shortFirtsLetterName).capitalized)\(String(shortFirtsLetterLasttName).capitalized)"
+        return initials
+    }
 }

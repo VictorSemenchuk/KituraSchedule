@@ -32,6 +32,7 @@ class RecordsViewController: UIViewController {
         super.viewDidLayoutSubviews()
         guard let table = self.tableView else { fatalError("TableView in VC doesn't exist viewDidLayoutSubviews method") }
         self.applyConstraints(to: table)
+        table.tableFooterView = UIView(frame: CGRect.zero)
         table.separatorInset = UIEdgeInsetsMake(0.0, 0.0, 0.0, 0.0)
         table.separatorColor = UIColor(red: 224.0/255.0, green: 236.0/255.0, blue: 241.0/255.0, alpha: 255.0/255.0)
     }

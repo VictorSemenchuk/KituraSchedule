@@ -20,7 +20,7 @@ class SignInViewController: UIViewController {
     
     //MARK: - Actions
     @IBAction func signInActionHandler(_ sender: UIButton) {
-        
+        Navigation.changeRootVCTo(rootVCType: .TabBar)
     }
     
     //MARK: - VC LifeCycle

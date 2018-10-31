@@ -18,6 +18,19 @@
 		32F5181E2188939800E026F3 /* UIVew+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F5181D2188939800E026F3 /* UIVew+Animation.swift */; };
 		32F5182221889E8D00E026F3 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F5182021889E8D00E026F3 /* SignUpViewController.xib */; };
 		32F5182321889E8D00E026F3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F5182121889E8D00E026F3 /* SignUpViewController.swift */; };
+		62984BE82189A9B80082121E /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984BE62189A9B80082121E /* UserListViewController.swift */; };
+		62984BE92189A9B80082121E /* UserListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62984BE72189A9B80082121E /* UserListViewController.xib */; };
+		62984BF72189B11F0082121E /* UIViewController+ShowErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984BF62189B11F0082121E /* UIViewController+ShowErrorAlert.swift */; };
+		62984BF92189B8120082121E /* UIView+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984BF82189B8120082121E /* UIView+Shake.swift */; };
+		62984BFB2189B88E0082121E /* UserListViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984BFA2189B88E0082121E /* UserListViewController+TableView.swift */; };
+		62984BFD2189BBBC0082121E /* Dactionary+Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984BFC2189BBBC0082121E /* Dactionary+Users.swift */; };
+		62984C022189BE900082121E /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62984C002189BE900082121E /* UserTableViewCell.xib */; };
+		62984C032189BE900082121E /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984C012189BE900082121E /* UserTableViewCell.swift */; };
+		62984C062189BFE90082121E /* Constants+NibNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984C052189BFE90082121E /* Constants+NibNames.swift */; };
+		62984C082189C0140082121E /* UIColor+UserColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984C072189C0140082121E /* UIColor+UserColor.swift */; };
+		62984C0A2189C7D20082121E /* UserListViewController+FetchUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984C092189C7D20082121E /* UserListViewController+FetchUsers.swift */; };
+		62984C0C2189C8300082121E /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984C0B2189C8300082121E /* Navigation.swift */; };
+		62984C0F2189C8C60082121E /* KituraTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62984C0E2189C8C60082121E /* KituraTabBarController.swift */; };
 		692D30B421822FBB00BB5420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30B321822FBB00BB5420 /* AppDelegate.swift */; };
 		692D30B921822FBB00BB5420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692D30B721822FBB00BB5420 /* Main.storyboard */; };
 		692D30BB21822FBC00BB5420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 692D30BA21822FBC00BB5420 /* Assets.xcassets */; };
@@ -28,20 +41,17 @@
 		692D30DB21823EDC00BB5420 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30D621823EDC00BB5420 /* Record.swift */; };
 		692D30DC21823EDC00BB5420 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D30D721823EDC00BB5420 /* Color.swift */; };
 		7467FEF4A1461D5059EFB5F5 /* Pods_KituraTeamSchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041672A5B435806AB3E9516B /* Pods_KituraTeamSchedule.framework */; };
-		CE4B9D8921888D55007BCC82 /* RLDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B9D8821888D55007BCC82 /* RLDetailedView.swift */; };
-		CE4B9D8B21888D8C007BCC82 /* RLDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B9D8A21888D8C007BCC82 /* RLDescriptionView.swift */; };
-		CE4F82462188503300EC860E /* RLTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F82442188503300EC860E /* RLTableViewCell.swift */; };
-		CE4F82472188503300EC860E /* RLTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4F82452188503300EC860E /* RLTableViewCell.xib */; };
 		CE75588F21886DEF00E3E254 /* AddRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75588E21886DEF00E3E254 /* AddRecordViewController.swift */; };
-		DAB7585721899A9C00570D73 /* RecordsViewController+SetupViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7585621899A9C00570D73 /* RecordsViewController+SetupViews.swift */; };
-		DAB7585921899AF200570D73 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7585821899AF200570D73 /* RecordsViewController.swift */; };
-		DAB7585C21899CC800570D73 /* UIViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7585B21899CC800570D73 /* UIViewController+Constraints.swift */; };
-		DAB7585E21899CE000570D73 /* RecordsViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7585D21899CE000570D73 /* RecordsViewController+TableView.swift */; };
-		DAB7586221899D9A00570D73 /* CAGradientLayer+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7586121899D9A00570D73 /* CAGradientLayer+Gradient.swift */; };
-		DAB7586421899DDB00570D73 /* UINavigationBar+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB7586321899DDB00570D73 /* UINavigationBar+Gradient.swift */; };
-		DABBB5E02189ADBF004E6793 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBB5DF2189ADBF004E6793 /* UIViewController+Alert.swift */; };
-		DABBB5E32189AE4F004E6793 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBB5E12189AE4F004E6793 /* Date+Format.swift */; };
-		DABBB5E42189AE4F004E6793 /* String+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBB5E22189AE4F004E6793 /* String+Format.swift */; };
+		DABBB5EC2189EB80004E6793 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBB5E62189EB80004E6793 /* Date+Format.swift */; };
+		DABBB5ED2189EB80004E6793 /* String+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBB5E72189EB80004E6793 /* String+Format.swift */; };
+		DABBB5EF2189EB80004E6793 /* UIViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBB5E92189EB80004E6793 /* UIViewController+Constraints.swift */; };
+		DABBB5F62189EBC5004E6793 /* RecordsViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBB5F32189EBC5004E6793 /* RecordsViewController+TableView.swift */; };
+		DABBB5F72189EBC5004E6793 /* RecordsViewController+SetupViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBB5F42189EBC5004E6793 /* RecordsViewController+SetupViews.swift */; };
+		DABBB5F82189EBC5004E6793 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBB5F52189EBC5004E6793 /* RecordsViewController.swift */; };
+		DABBB5FE2189EC3F004E6793 /* RLDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBB5FA2189EC3F004E6793 /* RLDetailedView.swift */; };
+		DABBB5FF2189EC3F004E6793 /* RLDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBB5FB2189EC3F004E6793 /* RLDescriptionView.swift */; };
+		DABBB6002189EC3F004E6793 /* RLTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DABBB5FC2189EC3F004E6793 /* RLTableViewCell.xib */; };
+		DABBB6012189EC3F004E6793 /* RLTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBB5FD2189EC3F004E6793 /* RLTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +68,19 @@
 		32F5182021889E8D00E026F3 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		32F5182121889E8D00E026F3 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4F9518F0CBA3EEABD1170329 /* Pods-KituraTeamSchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KituraTeamSchedule.release.xcconfig"; path = "Pods/Target Support Files/Pods-KituraTeamSchedule/Pods-KituraTeamSchedule.release.xcconfig"; sourceTree = "<group>"; };
+		62984BE62189A9B80082121E /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		62984BE72189A9B80082121E /* UserListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListViewController.xib; sourceTree = "<group>"; };
+		62984BF62189B11F0082121E /* UIViewController+ShowErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ShowErrorAlert.swift"; sourceTree = "<group>"; };
+		62984BF82189B8120082121E /* UIView+Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shake.swift"; sourceTree = "<group>"; };
+		62984BFA2189B88E0082121E /* UserListViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserListViewController+TableView.swift"; sourceTree = "<group>"; };
+		62984BFC2189BBBC0082121E /* Dactionary+Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dactionary+Users.swift"; sourceTree = "<group>"; };
+		62984C002189BE900082121E /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		62984C012189BE900082121E /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		62984C052189BFE90082121E /* Constants+NibNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+NibNames.swift"; sourceTree = "<group>"; };
+		62984C072189C0140082121E /* UIColor+UserColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+UserColor.swift"; sourceTree = "<group>"; };
+		62984C092189C7D20082121E /* UserListViewController+FetchUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserListViewController+FetchUsers.swift"; sourceTree = "<group>"; };
+		62984C0B2189C8300082121E /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		62984C0E2189C8C60082121E /* KituraTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KituraTabBarController.swift; sourceTree = "<group>"; };
 		692D30B021822FBB00BB5420 /* KituraTeamSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KituraTeamSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		692D30B321822FBB00BB5420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		692D30B821822FBB00BB5420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,20 +93,17 @@
 		692D30D621823EDC00BB5420 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		692D30D721823EDC00BB5420 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		CD3CA6494FE8361A28CA141B /* Pods-KituraTeamSchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KituraTeamSchedule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KituraTeamSchedule/Pods-KituraTeamSchedule.debug.xcconfig"; sourceTree = "<group>"; };
-		CE4B9D8821888D55007BCC82 /* RLDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLDetailedView.swift; sourceTree = "<group>"; };
-		CE4B9D8A21888D8C007BCC82 /* RLDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLDescriptionView.swift; sourceTree = "<group>"; };
-		CE4F82442188503300EC860E /* RLTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLTableViewCell.swift; sourceTree = "<group>"; };
-		CE4F82452188503300EC860E /* RLTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RLTableViewCell.xib; sourceTree = "<group>"; };
 		CE75588E21886DEF00E3E254 /* AddRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordViewController.swift; sourceTree = "<group>"; };
-		DAB7585621899A9C00570D73 /* RecordsViewController+SetupViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordsViewController+SetupViews.swift"; sourceTree = "<group>"; };
-		DAB7585821899AF200570D73 /* RecordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
-		DAB7585B21899CC800570D73 /* UIViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Constraints.swift"; sourceTree = "<group>"; };
-		DAB7585D21899CE000570D73 /* RecordsViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordsViewController+TableView.swift"; sourceTree = "<group>"; };
-		DAB7586121899D9A00570D73 /* CAGradientLayer+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Gradient.swift"; sourceTree = "<group>"; };
-		DAB7586321899DDB00570D73 /* UINavigationBar+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Gradient.swift"; sourceTree = "<group>"; };
-		DABBB5DF2189ADBF004E6793 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
-		DABBB5E12189AE4F004E6793 /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
-		DABBB5E22189AE4F004E6793 /* String+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Format.swift"; sourceTree = "<group>"; };
+		DABBB5E62189EB80004E6793 /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
+		DABBB5E72189EB80004E6793 /* String+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Format.swift"; sourceTree = "<group>"; };
+		DABBB5E92189EB80004E6793 /* UIViewController+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Constraints.swift"; sourceTree = "<group>"; };
+		DABBB5F32189EBC5004E6793 /* RecordsViewController+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordsViewController+TableView.swift"; sourceTree = "<group>"; };
+		DABBB5F42189EBC5004E6793 /* RecordsViewController+SetupViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordsViewController+SetupViews.swift"; sourceTree = "<group>"; };
+		DABBB5F52189EBC5004E6793 /* RecordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
+		DABBB5FA2189EC3F004E6793 /* RLDetailedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLDetailedView.swift; sourceTree = "<group>"; };
+		DABBB5FB2189EC3F004E6793 /* RLDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLDescriptionView.swift; sourceTree = "<group>"; };
+		DABBB5FC2189EC3F004E6793 /* RLTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLTableViewCell.xib; sourceTree = "<group>"; };
+		DABBB5FD2189EC3F004E6793 /* RLTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +132,12 @@
 		32F5181121885BF900E026F3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				DAB7585521899A4900570D73 /* RecordsViewController */,
+				CE75588E21886DEF00E3E254 /* AddRecordViewController.swift */,
 				32F518182188738C00E026F3 /* Welcome */,
 				32F518172188737D00E026F3 /* SignIn */,
 				32F5182421889E9B00E026F3 /* SignUp */,
+				62984BEA2189A9BF0082121E /* UserLIst */,
+				DABBB5F22189EBC5004E6793 /* RecordsViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -141,7 +163,14 @@
 		32F5181F218893B800E026F3 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				62984BFC2189BBBC0082121E /* Dactionary+Users.swift */,
+				62984C072189C0140082121E /* UIColor+UserColor.swift */,
 				32F5181D2188939800E026F3 /* UIVew+Animation.swift */,
+				62984BF82189B8120082121E /* UIView+Shake.swift */,
+				62984BF62189B11F0082121E /* UIViewController+ShowErrorAlert.swift */,
+				DABBB5E62189EB80004E6793 /* Date+Format.swift */,
+				DABBB5E72189EB80004E6793 /* String+Format.swift */,
+				DABBB5E92189EB80004E6793 /* UIViewController+Constraints.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -153,6 +182,52 @@
 				32F5182021889E8D00E026F3 /* SignUpViewController.xib */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		62984BEA2189A9BF0082121E /* UserLIst */ = {
+			isa = PBXGroup;
+			children = (
+				62984BE62189A9B80082121E /* UserListViewController.swift */,
+				62984BFA2189B88E0082121E /* UserListViewController+TableView.swift */,
+				62984C092189C7D20082121E /* UserListViewController+FetchUsers.swift */,
+				62984BE72189A9B80082121E /* UserListViewController.xib */,
+			);
+			path = UserLIst;
+			sourceTree = "<group>";
+		};
+		62984BFE2189BE740082121E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				62984BFF2189BE900082121E /* UserTableViewCell */,
+				DABBB5F92189EC3F004E6793 /* RecordTableViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		62984BFF2189BE900082121E /* UserTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				62984C002189BE900082121E /* UserTableViewCell.xib */,
+				62984C012189BE900082121E /* UserTableViewCell.swift */,
+			);
+			path = UserTableViewCell;
+			sourceTree = "<group>";
+		};
+		62984C042189BFC30082121E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				62984C052189BFE90082121E /* Constants+NibNames.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		62984C0D2189C83B0082121E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				62984C0B2189C8300082121E /* Navigation.swift */,
+				62984C0E2189C8C60082121E /* KituraTabBarController.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		692D30A721822FBB00BB5420 = {
@@ -177,13 +252,13 @@
 			isa = PBXGroup;
 			children = (
 				692D30B321822FBB00BB5420 /* AppDelegate.swift */,
-				DAB7585A21899CB900570D73 /* Extension */,
+				62984C042189BFC30082121E /* Constants */,
 				692D30D221823EDC00BB5420 /* Models */,
+				62984BFE2189BE740082121E /* Views */,
 				32F51800218786D600E026F3 /* Service */,
+				62984C0D2189C83B0082121E /* Navigation */,
 				32F5181F218893B800E026F3 /* Categories */,
 				32F5181121885BF900E026F3 /* ViewControllers */,
-				CE75588E21886DEF00E3E254 /* AddRecordViewController.swift */,
-				CE4F823A21884F3900EC860E /* CS */,
 				692D30B721822FBB00BB5420 /* Main.storyboard */,
 				692D30BA21822FBC00BB5420 /* Assets.xcassets */,
 				692D30BC21822FBC00BB5420 /* LaunchScreen.storyboard */,
@@ -221,38 +296,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CE4F823A21884F3900EC860E /* CS */ = {
+		DABBB5F22189EBC5004E6793 /* RecordsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CE4F82442188503300EC860E /* RLTableViewCell.swift */,
-				CE4F82452188503300EC860E /* RLTableViewCell.xib */,
-				CE4B9D8821888D55007BCC82 /* RLDetailedView.swift */,
-				CE4B9D8A21888D8C007BCC82 /* RLDescriptionView.swift */,
-			);
-			path = CS;
-			sourceTree = "<group>";
-		};
-		DAB7585521899A4900570D73 /* RecordsViewController */ = {
-			isa = PBXGroup;
-			children = (
-				DAB7585821899AF200570D73 /* RecordsViewController.swift */,
-				DAB7585621899A9C00570D73 /* RecordsViewController+SetupViews.swift */,
-				DAB7585D21899CE000570D73 /* RecordsViewController+TableView.swift */,
+				DABBB5F32189EBC5004E6793 /* RecordsViewController+TableView.swift */,
+				DABBB5F42189EBC5004E6793 /* RecordsViewController+SetupViews.swift */,
+				DABBB5F52189EBC5004E6793 /* RecordsViewController.swift */,
 			);
 			path = RecordsViewController;
 			sourceTree = "<group>";
 		};
-		DAB7585A21899CB900570D73 /* Extension */ = {
+		DABBB5F92189EC3F004E6793 /* RecordTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				DABBB5DF2189ADBF004E6793 /* UIViewController+Alert.swift */,
-				DAB7585B21899CC800570D73 /* UIViewController+Constraints.swift */,
-				DAB7586121899D9A00570D73 /* CAGradientLayer+Gradient.swift */,
-				DAB7586321899DDB00570D73 /* UINavigationBar+Gradient.swift */,
-				DABBB5E12189AE4F004E6793 /* Date+Format.swift */,
-				DABBB5E22189AE4F004E6793 /* String+Format.swift */,
+				DABBB5FA2189EC3F004E6793 /* RLDetailedView.swift */,
+				DABBB5FB2189EC3F004E6793 /* RLDescriptionView.swift */,
+				DABBB5FC2189EC3F004E6793 /* RLTableViewCell.xib */,
+				DABBB5FD2189EC3F004E6793 /* RLTableViewCell.swift */,
 			);
-			path = Extension;
+			path = RecordTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,11 +377,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62984C022189BE900082121E /* UserTableViewCell.xib in Resources */,
+				DABBB6002189EC3F004E6793 /* RLTableViewCell.xib in Resources */,
 				32F5181021885BEF00E026F3 /* SignInViewController.xib in Resources */,
 				32F5181A2188793E00E026F3 /* WelcomeViewController.xib in Resources */,
 				32F5182221889E8D00E026F3 /* SignUpViewController.xib in Resources */,
 				692D30BE21822FBC00BB5420 /* LaunchScreen.storyboard in Resources */,
-				CE4F82472188503300EC860E /* RLTableViewCell.xib in Resources */,
+				62984BE92189A9B80082121E /* UserListViewController.xib in Resources */,
 				692D30BB21822FBC00BB5420 /* Assets.xcassets in Resources */,
 				692D30B921822FBB00BB5420 /* Main.storyboard in Resources */,
 			);
@@ -371,33 +435,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62984C032189BE900082121E /* UserTableViewCell.swift in Sources */,
 				692D30D821823EDC00BB5420 /* Reason.swift in Sources */,
+				DABBB5EF2189EB80004E6793 /* UIViewController+Constraints.swift in Sources */,
 				CE75588F21886DEF00E3E254 /* AddRecordViewController.swift in Sources */,
-				CE4F82462188503300EC860E /* RLTableViewCell.swift in Sources */,
-				CE4B9D8B21888D8C007BCC82 /* RLDescriptionView.swift in Sources */,
+				DABBB5FF2189EC3F004E6793 /* RLDescriptionView.swift in Sources */,
 				692D30DC21823EDC00BB5420 /* Color.swift in Sources */,
-				DABBB5E02189ADBF004E6793 /* UIViewController+Alert.swift in Sources */,
-				DABBB5E42189AE4F004E6793 /* String+Format.swift in Sources */,
-				CE4B9D8921888D55007BCC82 /* RLDetailedView.swift in Sources */,
+				DABBB5F62189EBC5004E6793 /* RecordsViewController+TableView.swift in Sources */,
+				DABBB6012189EC3F004E6793 /* RLTableViewCell.swift in Sources */,
+				DABBB5F82189EBC5004E6793 /* RecordsViewController.swift in Sources */,
+				62984BF92189B8120082121E /* UIView+Shake.swift in Sources */,
+				62984BFD2189BBBC0082121E /* Dactionary+Users.swift in Sources */,
+				62984C0F2189C8C60082121E /* KituraTabBarController.swift in Sources */,
 				692D30DB21823EDC00BB5420 /* Record.swift in Sources */,
 				692D30B421822FBB00BB5420 /* AppDelegate.swift in Sources */,
-				DAB7585921899AF200570D73 /* RecordsViewController.swift in Sources */,
-				DAB7585C21899CC800570D73 /* UIViewController+Constraints.swift in Sources */,
 				32F5180C218856A900E026F3 /* Service.swift in Sources */,
-				DABBB5E32189AE4F004E6793 /* Date+Format.swift in Sources */,
 				32F5181C218879C800E026F3 /* WelcomeViewController.swift in Sources */,
+				DABBB5F72189EBC5004E6793 /* RecordsViewController+SetupViews.swift in Sources */,
 				32F517FE218786CB00E026F3 /* Service+GET.swift in Sources */,
+				62984BF72189B11F0082121E /* UIViewController+ShowErrorAlert.swift in Sources */,
+				62984C082189C0140082121E /* UIColor+UserColor.swift in Sources */,
 				32F5180A21884D6600E026F3 /* Service+Authentication.swift in Sources */,
 				32F5180F21885BEF00E026F3 /* SignInViewController.swift in Sources */,
+				62984BE82189A9B80082121E /* UserListViewController.swift in Sources */,
+				62984BFB2189B88E0082121E /* UserListViewController+TableView.swift in Sources */,
 				692D30DA21823EDC00BB5420 /* User.swift in Sources */,
-				DAB7586221899D9A00570D73 /* CAGradientLayer+Gradient.swift in Sources */,
+				62984C0A2189C7D20082121E /* UserListViewController+FetchUsers.swift in Sources */,
 				32F5181E2188939800E026F3 /* UIVew+Animation.swift in Sources */,
-				DAB7585E21899CE000570D73 /* RecordsViewController+TableView.swift in Sources */,
+				62984C062189BFE90082121E /* Constants+NibNames.swift in Sources */,
 				692D30D921823EDC00BB5420 /* Cred.swift in Sources */,
+				62984C0C2189C8300082121E /* Navigation.swift in Sources */,
 				32F517FD218786CB00E026F3 /* Service+POST.swift in Sources */,
+				DABBB5ED2189EB80004E6793 /* String+Format.swift in Sources */,
+				DABBB5EC2189EB80004E6793 /* Date+Format.swift in Sources */,
 				32F5182321889E8D00E026F3 /* SignUpViewController.swift in Sources */,
-				DAB7585721899A9C00570D73 /* RecordsViewController+SetupViews.swift in Sources */,
-				DAB7586421899DDB00570D73 /* UINavigationBar+Gradient.swift in Sources */,
+				DABBB5FE2189EC3F004E6793 /* RLDetailedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
