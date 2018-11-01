@@ -17,8 +17,9 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kCellId, for: indexPath) as! RLTableViewCell
         
+        //W: fetch records by kCurrentUserId
 //        guard let records = self.dataSource else {
-//            <#statements#>
+//            cell.record = fetchedRecord
 //        }
 
         return cell
@@ -31,6 +32,7 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let recocrVC = RecordViewController()
+        //W: throw record to this controller .record = fetched record
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

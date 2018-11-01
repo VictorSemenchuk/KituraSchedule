@@ -387,6 +387,7 @@
 				692D30AD21822FBB00BB5420 /* Frameworks */,
 				692D30AE21822FBB00BB5420 /* Resources */,
 				245783F915240758207DCC16 /* [CP] Embed Pods Frameworks */,
+				3251DD80218B20AD009805D8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -470,6 +471,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KituraTeamSchedule/Pods-KituraTeamSchedule-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		3251DD80218B20AD009805D8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO:|FIXME:|W:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"\n";
 		};
 		81A6663C8CFBF2A910339807 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
