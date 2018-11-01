@@ -13,9 +13,9 @@ class UserListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
-    var users:[User]?
-    var usersDictionary:[String: [User]]?
+
+    var users: [User]?
+    var usersDictionary: [String:[User]]?
     var usersTitles:[String]?
     
     

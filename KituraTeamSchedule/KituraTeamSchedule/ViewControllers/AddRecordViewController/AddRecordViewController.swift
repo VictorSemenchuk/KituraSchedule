@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddRecordViewController: UIViewController {
+class RecordViewController: UIViewController {
     
 //    @IBOutlet weak var scrollView: UIScrollView!
 //    //@IBOutlet weak var contentView: UIView!
@@ -18,30 +18,51 @@ class AddRecordViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var reasonCollectionView: UICollectionView!
     @IBOutlet weak var dateSetterView: KPIDateSetter!
-    @IBOutlet weak var detailsTextField: UITextField!
-    //@IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var descriptionTextView: UITextView!
     
-    @IBOutlet weak var constraintContentHeight: NSLayoutConstraint!
+    var record: Record?
+    var reasons: [Reason]?
+    
+    
+    //MARK: - ViewController lifecycle
     
     override func loadView() {
         super.loadView()
         self.view.backgroundColor = UIColor.blue
-//        self.reasonCollectionView.backgroundColor = UIColor.lightGray
         //self.descriptionTextView.layer.borderWidth = 1
         //self.descriptionTextView.layer.borderColor = UIColor.black.cgColor
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        //self.contentView.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(endEditingTextView(_:))))
-        //self.descriptionTextView.delegate = self
+//        self.contentView.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(endEditingTextView(_:))))
+//        self.descriptionTextView.delegate = self
+        
+        //configure collectionView
+        self.configureCollectionView()
     }
     
-    @objc func endEditingTextView(_ sender: UITextView) {
-        self.view.endEditing(true)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.registerForKeyboardNotifications()
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.removeObserver()
+    }
+    
+    
+    //configure with record
+    func configureWithRecord(record:Record) {
+        
+    }
+    
+    
+//    @objc func endEditingTextView(_ sender: UITextView) {
+//        self.view.endEditing(false)
+//    }
+    
     
     @objc override func keyboardWillShow(notification: Notification) {
         guard let userInfo = notification.userInfo,
@@ -57,7 +78,10 @@ class AddRecordViewController: UIViewController {
     
 }
 
-extension AddRecordViewController: UITextViewDelegate {
+
+
+
+extension RecordViewController: UITextViewDelegate {
     
     func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
         return true

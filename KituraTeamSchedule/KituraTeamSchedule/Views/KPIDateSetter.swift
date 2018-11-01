@@ -39,7 +39,7 @@ class KPIDateSetter:UIView {
         
         configureDatePicker()
         configuerToolBar()
-      }
+    }
     
     func configureDatePicker(){
         datePicker = UIDatePicker()

@@ -11,11 +11,13 @@ import UIKit
 
 extension UITextField {
     open override func awakeFromNib() {
+        self.setLeftPadding(value: 10)
+    }
+    
+    func setBorder() {
         self.layer.borderWidth = 0.3
         self.layer.borderColor = UIColor.lightGray.cgColor
         self.layer.cornerRadius = 8
-        
-        self.setLeftPadding(value: 10)
     }
     
     /**

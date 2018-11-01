@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3251DD76218A56D2009805D8 /* AddRecodViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251DD75218A56D2009805D8 /* AddRecodViewController+CollectionView.swift */; };
+		3251DD79218A72D1009805D8 /* ReasonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251DD77218A72D1009805D8 /* ReasonCollectionViewCell.swift */; };
+		3251DD7A218A72D1009805D8 /* ReasonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3251DD78218A72D1009805D8 /* ReasonCollectionViewCell.xib */; };
 		32F517FD218786CB00E026F3 /* Service+POST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F517FA218786CB00E026F3 /* Service+POST.swift */; };
 		32F517FE218786CB00E026F3 /* Service+GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F517FB218786CB00E026F3 /* Service+GET.swift */; };
 		32F5180A21884D6600E026F3 /* Service+Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F5180921884D6600E026F3 /* Service+Authentication.swift */; };
@@ -65,6 +68,9 @@
 
 /* Begin PBXFileReference section */
 		041672A5B435806AB3E9516B /* Pods_KituraTeamSchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KituraTeamSchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3251DD75218A56D2009805D8 /* AddRecodViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddRecodViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		3251DD77218A72D1009805D8 /* ReasonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonCollectionViewCell.swift; sourceTree = "<group>"; };
+		3251DD78218A72D1009805D8 /* ReasonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReasonCollectionViewCell.xib; sourceTree = "<group>"; };
 		32F517FA218786CB00E026F3 /* Service+POST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Service+POST.swift"; sourceTree = "<group>"; };
 		32F517FB218786CB00E026F3 /* Service+GET.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Service+GET.swift"; sourceTree = "<group>"; };
 		32F5180921884D6600E026F3 /* Service+Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service+Authentication.swift"; sourceTree = "<group>"; };
@@ -136,6 +142,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3251DD7B218A72DB009805D8 /* ReasonCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3251DD77218A72D1009805D8 /* ReasonCollectionViewCell.swift */,
+				3251DD78218A72D1009805D8 /* ReasonCollectionViewCell.xib */,
+			);
+			path = ReasonCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		32F51800218786D600E026F3 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,7 +341,9 @@
 			isa = PBXGroup;
 			children = (
 				DA877A6B218A180B0007B147 /* AddRecordViewController.swift */,
+				3251DD75218A56D2009805D8 /* AddRecodViewController+CollectionView.swift */,
 				DA877A69218A180B0007B147 /* AddRecordViewController.xib */,
+				3251DD7B218A72DB009805D8 /* ReasonCollectionViewCell */,
 			);
 			path = AddRecordViewController;
 			sourceTree = "<group>";
@@ -416,6 +433,7 @@
 				DABBB6002189EC3F004E6793 /* RLTableViewCell.xib in Resources */,
 				32F5181021885BEF00E026F3 /* SignInViewController.xib in Resources */,
 				32F5181A2188793E00E026F3 /* WelcomeViewController.xib in Resources */,
+				3251DD7A218A72D1009805D8 /* ReasonCollectionViewCell.xib in Resources */,
 				32F5182221889E8D00E026F3 /* SignUpViewController.xib in Resources */,
 				DA877A6C218A180B0007B147 /* KPIDateSetter.xib in Resources */,
 				692D30BE21822FBC00BB5420 /* LaunchScreen.storyboard in Resources */,
@@ -472,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3251DD79218A72D1009805D8 /* ReasonCollectionViewCell.swift in Sources */,
 				62984C032189BE900082121E /* UserTableViewCell.swift in Sources */,
 				692D30D821823EDC00BB5420 /* Reason.swift in Sources */,
 				DA877A6E218A180B0007B147 /* KPIDateSetter.swift in Sources */,
@@ -499,6 +518,7 @@
 				62984C082189C0140082121E /* UIColor+UserColor.swift in Sources */,
 				32F5180A21884D6600E026F3 /* Service+Authentication.swift in Sources */,
 				32F5180F21885BEF00E026F3 /* SignInViewController.swift in Sources */,
+				3251DD76218A56D2009805D8 /* AddRecodViewController+CollectionView.swift in Sources */,
 				62984BE82189A9B80082121E /* UserListViewController.swift in Sources */,
 				62984BFB2189B88E0082121E /* UserListViewController+TableView.swift in Sources */,
 				692D30DA21823EDC00BB5420 /* User.swift in Sources */,

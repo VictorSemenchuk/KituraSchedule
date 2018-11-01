@@ -41,7 +41,7 @@ class RecordsViewController: UIViewController {
     //MARK:- Methods
     
     @objc func addNewRecordToTimesTable(sender: UIButton) {
-        let addrecordVC = AddRecordViewController.init(nibName: "AddRecordViewController", bundle: nil)
+        let addrecordVC = RecordViewController.init(nibName: "AddRecordViewController", bundle: nil)
         self.navigationController?.pushViewController(addrecordVC, animated: true)
     }
     

@@ -33,8 +33,8 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: kUserTableViewCellIdentifier) as? UserTableViewCell,
-            let sectionTitle = self.usersTitles,
-            let sectionDict = self.usersDictionary,
+            let sectionTitle  = self.usersTitles,
+            let sectionDict   = self.usersDictionary,
             let sectionValues = sectionDict[sectionTitle[indexPath.section]] else { return UserTableViewCell() }
         
         //contact
