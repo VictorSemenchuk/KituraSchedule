@@ -48,8 +48,8 @@ class RecordViewController: UIViewController {
             
             return
         }
-        
         Service.addRecord(record: record)
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {

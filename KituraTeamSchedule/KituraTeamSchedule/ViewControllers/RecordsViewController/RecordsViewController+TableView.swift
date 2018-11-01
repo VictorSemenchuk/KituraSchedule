@@ -16,6 +16,11 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kCellId, for: indexPath) as! RLTableViewCell
+        
+//        guard let records = self.dataSource else {
+//            <#statements#>
+//        }
+
         return cell
     }
     

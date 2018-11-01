@@ -26,7 +26,11 @@ class RecordsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
-        self.generateDataSource()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+         self.generateDataSource()
     }
     
     override func viewDidLayoutSubviews() {

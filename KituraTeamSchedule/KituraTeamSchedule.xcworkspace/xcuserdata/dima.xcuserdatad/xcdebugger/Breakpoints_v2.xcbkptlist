@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KituraTeamSchedule/ViewControllers/AddRecordViewController/AddRecodViewController+CollectionView.swift"
-            timestampString = "562762289.811397"
+            timestampString = "562765782.326954"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KituraTeamSchedule/ViewControllers/AddRecordViewController/ReasonCollectionViewCell/ReasonCollectionViewCell.swift"
-            timestampString = "562762289.81157"
+            timestampString = "562765782.327073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KituraTeamSchedule/ViewControllers/AddRecordViewController/AddRecodViewController+CollectionView.swift"
-            timestampString = "562762289.811681"
+            timestampString = "562765782.32718"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KituraTeamSchedule/ViewControllers/AddRecordViewController/AddRecodViewController+CollectionView.swift"
-            timestampString = "562762289.811787"
+            timestampString = "562765782.327283"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
@@ -90,27 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KituraTeamSchedule/ViewControllers/AddRecordViewController/AddRecordViewController.swift"
-            timestampString = "562762326.1388021"
+            timestampString = "562765782.327408"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "RecordViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "KituraTeamSchedule/ViewControllers/AddRecordViewController/AddRecordViewController.swift"
-            timestampString = "562762327.30266"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "saveActionHandler()"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,13 +106,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KituraTeamSchedule/ViewControllers/AddRecordViewController/AddRecordViewController.swift"
-            timestampString = "562762339.00291"
+            timestampString = "562765782.327484"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "RecordViewController"
-            landmarkType = "3">
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "saveActionHandler()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
