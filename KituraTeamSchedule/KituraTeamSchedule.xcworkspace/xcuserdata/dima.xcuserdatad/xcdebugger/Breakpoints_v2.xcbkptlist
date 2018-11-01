@@ -15,7 +15,23 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
             endingLineNumber = "35"
-            landmarkName = "getRecordsByUserID(userId:completion:)"
+            landmarkName = "Service"
+            landmarkType = "21">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KituraTeamSchedule/ViewControllers/AddRecordViewController/AddRecodViewController+CollectionView.swift"
+            timestampString = "562762289.811397"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "numberOfSections(in:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,46 +41,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KituraTeamSchedule/Service/Service+GET.swift"
-            timestampString = "562601514.772608"
+            filePath = "KituraTeamSchedule/ViewControllers/AddRecordViewController/ReasonCollectionViewCell/ReasonCollectionViewCell.swift"
+            timestampString = "562762289.81157"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "getElementByID(dataType:id:completion:)"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "configureCellWithReason(reason:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static KituraTeamSchedule.Service.getElementByID(dataType: KituraTeamSchedule.Service.DataType, id: Swift.Int, completion: () -&gt; ()) -&gt; ()"
-                  moduleName = "KituraTeamSchedule"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dima/CLONED/KituraSchedule/KituraTeamSchedule/KituraTeamSchedule/Service/Service+GET.swift"
-                  timestampString = "562668969.130401"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "619">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;KituraTeamSchedule.User&gt;, Swift.Optional&lt;KituraKit.RequestError&gt;) -&gt; () in static KituraTeamSchedule.Service.getElementByID(dataType: KituraTeamSchedule.Service.DataType, id: Swift.Int, completion: () -&gt; ()) -&gt; ()"
-                  moduleName = "KituraTeamSchedule"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dima/CLONED/KituraSchedule/KituraTeamSchedule/KituraTeamSchedule/Service/Service+GET.swift"
-                  timestampString = "562668969.133605"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -73,14 +57,78 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KituraTeamSchedule/Service/Service+GET.swift"
-            timestampString = "562601514.772709"
+            filePath = "KituraTeamSchedule/ViewControllers/AddRecordViewController/AddRecodViewController+CollectionView.swift"
+            timestampString = "562762289.811681"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "getElementByID(dataType:id:completion:)"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "collectionView(_:numberOfItemsInSection:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KituraTeamSchedule/ViewControllers/AddRecordViewController/AddRecodViewController+CollectionView.swift"
+            timestampString = "562762289.811787"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "collectionView(_:layout:sizeForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KituraTeamSchedule/ViewControllers/AddRecordViewController/AddRecordViewController.swift"
+            timestampString = "562762326.1388021"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "RecordViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KituraTeamSchedule/ViewControllers/AddRecordViewController/AddRecordViewController.swift"
+            timestampString = "562762327.30266"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "saveActionHandler()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KituraTeamSchedule/ViewControllers/AddRecordViewController/AddRecordViewController.swift"
+            timestampString = "562762339.00291"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "RecordViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -20,7 +20,7 @@ class Navigation {
         case Welcome
     }
     
-    
+    static var currentUser:User?
     //MARK: - Login checking
     
     static func checkLoginnedUser() {

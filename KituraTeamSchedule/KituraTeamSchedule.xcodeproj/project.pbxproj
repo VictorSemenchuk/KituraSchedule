@@ -10,6 +10,8 @@
 		3251DD76218A56D2009805D8 /* AddRecodViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251DD75218A56D2009805D8 /* AddRecodViewController+CollectionView.swift */; };
 		3251DD79218A72D1009805D8 /* ReasonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251DD77218A72D1009805D8 /* ReasonCollectionViewCell.swift */; };
 		3251DD7A218A72D1009805D8 /* ReasonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3251DD78218A72D1009805D8 /* ReasonCollectionViewCell.xib */; };
+		3251DD7D218B0AA3009805D8 /* AddRecordViewController+KayboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251DD7C218B0AA3009805D8 /* AddRecordViewController+KayboardHandler.swift */; };
+		3251DD7F218B10FD009805D8 /* AddRecordViewController+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251DD7E218B10FD009805D8 /* AddRecordViewController+TextField.swift */; };
 		32F517FD218786CB00E026F3 /* Service+POST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F517FA218786CB00E026F3 /* Service+POST.swift */; };
 		32F517FE218786CB00E026F3 /* Service+GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F517FB218786CB00E026F3 /* Service+GET.swift */; };
 		32F5180A21884D6600E026F3 /* Service+Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F5180921884D6600E026F3 /* Service+Authentication.swift */; };
@@ -71,6 +73,8 @@
 		3251DD75218A56D2009805D8 /* AddRecodViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddRecodViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		3251DD77218A72D1009805D8 /* ReasonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonCollectionViewCell.swift; sourceTree = "<group>"; };
 		3251DD78218A72D1009805D8 /* ReasonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReasonCollectionViewCell.xib; sourceTree = "<group>"; };
+		3251DD7C218B0AA3009805D8 /* AddRecordViewController+KayboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddRecordViewController+KayboardHandler.swift"; sourceTree = "<group>"; };
+		3251DD7E218B10FD009805D8 /* AddRecordViewController+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddRecordViewController+TextField.swift"; sourceTree = "<group>"; };
 		32F517FA218786CB00E026F3 /* Service+POST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Service+POST.swift"; sourceTree = "<group>"; };
 		32F517FB218786CB00E026F3 /* Service+GET.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Service+GET.swift"; sourceTree = "<group>"; };
 		32F5180921884D6600E026F3 /* Service+Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service+Authentication.swift"; sourceTree = "<group>"; };
@@ -341,6 +345,8 @@
 			isa = PBXGroup;
 			children = (
 				DA877A6B218A180B0007B147 /* AddRecordViewController.swift */,
+				3251DD7E218B10FD009805D8 /* AddRecordViewController+TextField.swift */,
+				3251DD7C218B0AA3009805D8 /* AddRecordViewController+KayboardHandler.swift */,
 				3251DD75218A56D2009805D8 /* AddRecodViewController+CollectionView.swift */,
 				DA877A69218A180B0007B147 /* AddRecordViewController.xib */,
 				3251DD7B218A72DB009805D8 /* ReasonCollectionViewCell */,
@@ -511,6 +517,7 @@
 				32F5181C218879C800E026F3 /* WelcomeViewController.swift in Sources */,
 				62984C152189FF220082121E /* SignUpViewController+UITextFieldDelegate.swift in Sources */,
 				62984C132189FC940082121E /* SignUpViewController+KeyboardHandling.swift in Sources */,
+				3251DD7F218B10FD009805D8 /* AddRecordViewController+TextField.swift in Sources */,
 				DABBB5F72189EBC5004E6793 /* RecordsViewController+SetupViews.swift in Sources */,
 				32F517FE218786CB00E026F3 /* Service+GET.swift in Sources */,
 				62984BF72189B11F0082121E /* UIViewController+ShowErrorAlert.swift in Sources */,
@@ -524,6 +531,7 @@
 				692D30DA21823EDC00BB5420 /* User.swift in Sources */,
 				62984C19218A02830082121E /* SignInViewController+UITextFieldDelegate.swift in Sources */,
 				62984C0A2189C7D20082121E /* UserListViewController+FetchUsers.swift in Sources */,
+				3251DD7D218B0AA3009805D8 /* AddRecordViewController+KayboardHandler.swift in Sources */,
 				32F5181E2188939800E026F3 /* UIVew+Animation.swift in Sources */,
 				62984C062189BFE90082121E /* Constants+NibNames.swift in Sources */,
 				692D30D921823EDC00BB5420 /* Cred.swift in Sources */,

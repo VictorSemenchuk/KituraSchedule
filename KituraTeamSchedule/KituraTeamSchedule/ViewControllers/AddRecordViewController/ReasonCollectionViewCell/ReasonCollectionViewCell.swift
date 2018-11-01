@@ -15,7 +15,8 @@ class ReasonCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.contentView.layer.cornerRadius = 8
+        self.reasonTitleLabel.layer.cornerRadius = 20
+        self.reasonTitleLabel.clipsToBounds = true
     }
     
     func configureCellWithReason(reason:Reason) {

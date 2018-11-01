@@ -12,12 +12,13 @@ import UIKit
 fileprivate let kReasonCollectionViewCellIdentifier = "ReasonCoolectionViewCellIdentifier"
 fileprivate let kReasonCollectionViewCellNibName    = "ReasonCollectionViewCell"
 
-extension RecordViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension RecordViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     //configure collection view
     func configureCollectionView() {
         self.reasonCollectionView.dataSource = self
         self.reasonCollectionView.delegate   = self
+
         self.reasonCollectionView.register(UINib.init(nibName: kReasonCollectionViewCellNibName, bundle: Bundle.main), forCellWithReuseIdentifier: kReasonCollectionViewCellIdentifier)
         
         //load reasons
@@ -27,6 +28,7 @@ extension RecordViewController: UICollectionViewDelegate, UICollectionViewDataSo
                 return
             }
             self.reasons = reasons
+            self.reasonCollectionView.reloadData()
         }
     }
     
@@ -48,7 +50,7 @@ extension RecordViewController: UICollectionViewDelegate, UICollectionViewDataSo
 
         let reason = reasons[indexPath.row]
 
-//        cell.configureCellWith(reason: reason)
+        cell.configureCellWithReason(reason: reason)
         return cell
     }
     
@@ -58,11 +60,25 @@ extension RecordViewController: UICollectionViewDelegate, UICollectionViewDataSo
         guard let reasons = self.reasons else { return }
         let reason = reasons[indexPath.row]
         
-        //Record.reason = reason
+        collectionView.visibleCells.forEach { cell in
+            if let newCell = cell as? ReasonCollectionViewCell {
+                newCell.reasonTitleLabel.alpha = 0.3
+            }
+        }
+        
+        cell?.reasonTitleLabel.alpha = 1
+        self.record?.reason = reason
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.bounds.size.width - 32.0, height: 60)
+        
+        var size = CGSize(width: 60, height: 80)
+        guard let reasons = self.reasons else {
+            return size
+        }
+        
+        size.width = (collectionView.bounds.width - 20) / CGFloat(reasons.count)
+        return size
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -75,6 +91,11 @@ extension RecordViewController: UICollectionViewDelegate, UICollectionViewDataSo
                                   bottom: 0,
                                   right: 0)
         return insets
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        
+        return 16
     }
     
     

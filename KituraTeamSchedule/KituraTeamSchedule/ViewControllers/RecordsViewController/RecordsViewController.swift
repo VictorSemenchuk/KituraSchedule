@@ -46,7 +46,7 @@ class RecordsViewController: UIViewController {
     }
     
     func generateDataSource() {
-        var id = 1
+        var id = kCurrentUserId
         if let user = self.user {
             id = user.id
             self.navigationItem.rightBarButtonItem = nil
@@ -69,14 +69,6 @@ class RecordsViewController: UIViewController {
         }
     }
     
+    
+    
 }
-
-
-
-
-
-
-
-
-
-
