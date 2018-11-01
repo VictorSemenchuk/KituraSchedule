@@ -16,7 +16,19 @@ class RecordViewController: UIViewController {
     @IBOutlet weak var descriptionTextField: UITextField!
     
     var record: Record?
+    var newRecord: Record?
     var reasons: [Reason]?
+    
+    //MARK: - ViewController initializtion
+    
+    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?, record: Record? = nil) {
+        self.record = record
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     
     //MARK: - ViewController lifecycle
@@ -28,11 +40,10 @@ class RecordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //record
-        self.record = Record.init(recordId: Int(arc4random_uniform(1000000)), userId:kCurrentUserId, startDate: dateSetterView.startTime ?? Date(), endDate: dateSetterView.endTime ?? Date(), reasonId: 0, details: "", reason: nil)
+        self.newRecord = Record.init(recordId: Int(arc4random_uniform(1000000)), userId:kCurrentUserId, startDate: dateSetterView.startTime ?? Date(), endDate: dateSetterView.endTime ?? Date(), reasonId: 1, details: "", reason: nil)
         
-        
+        self.configureWithRecord(record: self.record)
         let rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(saveActionHandler))
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
         
@@ -44,12 +55,23 @@ class RecordViewController: UIViewController {
     
     
     @objc func saveActionHandler() {
-        guard let record = self.record else {
-            
-            return
+        guard let start = self.dateSetterView.startTime, let end = self.dateSetterView.endTime, let details = self.descriptionTextField.text else {print("startTime \(self.dateSetterView.startTime)\n\(self.dateSetterView.endTime)\n\(self.descriptionTextField.text)"); return }
+        
+        if  self.record != nil {
+                self.record?.startDate = start
+                self.record?.endDate = end
+                self.record?.details = details
+            Service.updateRecord(record: self.record!) {
+                self.navigationController?.popViewController(animated: true)
+            }
+        } else if self.newRecord != nil {
+            self.newRecord?.startDate = start
+            self.newRecord?.endDate = end
+            self.newRecord?.details = details
+            Service.addRecord(record: self.newRecord!) {
+                self.navigationController?.popViewController(animated: true)
+            }
         }
-        Service.addRecord(record: record)
-        self.dismiss(animated: true, completion: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -64,8 +86,19 @@ class RecordViewController: UIViewController {
     
     
     //configure with record
-    func configureWithRecord(record:Record) {
-        self.record = record
+    func configureWithRecord(record:Record?) {
+        guard let validRecord = self.record else { print("No RECORD; Consider to add NEW ONE"); return }
+        print("RECORD \(validRecord)")
+        
+        let startDate = validRecord.startDate.dateComponents()
+        let endDate =  validRecord.endDate.dateComponents()
+        self.dateSetterView.startTimeText.text = startDate.longStyleDate
+        self.dateSetterView.startTime = validRecord.startDate
+        print("startTimeText \(startDate.longStyleDate)")
+        self.dateSetterView.endTimeText.text = endDate.shortStyleTime
+        self.dateSetterView.endTime = validRecord.endDate
+        print("endTimeText \(endDate.shortStyleTime)")
+        self.descriptionTextField.text = validRecord.details
     }
     
 }

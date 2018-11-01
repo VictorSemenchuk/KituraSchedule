@@ -51,6 +51,7 @@ extension RecordViewController: UICollectionViewDelegate, UICollectionViewDataSo
         let reason = reasons[indexPath.row]
 
         cell.configureCellWithReason(reason: reason)
+        cell.setAlphaComponentIfCellIsupdated(with: self.record)
         return cell
     }
     
@@ -62,12 +63,15 @@ extension RecordViewController: UICollectionViewDelegate, UICollectionViewDataSo
         
         collectionView.visibleCells.forEach { cell in
             if let newCell = cell as? ReasonCollectionViewCell {
-                newCell.reasonTitleLabel.alpha = 0.3
+                newCell.reasonTitleLabel.alpha = 0.2
             }
         }
         
         cell?.reasonTitleLabel.alpha = 1
         self.record?.reason = reason
+        self.record?.reasonId = reason.reasonId
+        self.newRecord?.reasonId = reason.reasonId
+        self.newRecord?.reason = reason
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

@@ -17,8 +17,8 @@ class KPIDateSetter:UIView {
     
     var startTime:Date?
     var endTime:Date?
-    
     private var datePicker:UIDatePicker?
+    private var myPicker:UIDatePicker?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -39,6 +39,7 @@ class KPIDateSetter:UIView {
         
         configureDatePicker()
         configuerToolBar()
+        configureTimePicker()
     }
     
     func configureDatePicker(){
@@ -47,9 +48,18 @@ class KPIDateSetter:UIView {
         datePicker?.backgroundColor = UIColor.white
         datePicker?.minuteInterval = 10
         startTimeText.inputView = datePicker
-        endTimeText.inputView = datePicker
         
         datePicker?.addTarget(self, action: #selector(KPIDateSetter.dateChanged(datePicker:)), for: .valueChanged)
+    }
+    
+    func configureTimePicker() {
+        myPicker = UIDatePicker()
+        myPicker?.datePickerMode = .time
+        myPicker?.backgroundColor = UIColor.white
+        myPicker?.minuteInterval = 10
+        endTimeText.inputView = self.myPicker
+        
+        myPicker?.addTarget(self, action: #selector(KPIDateSetter.dateMy(sender:)), for: .valueChanged)
     }
     
     func configuerToolBar(){
@@ -67,22 +77,67 @@ class KPIDateSetter:UIView {
         startTimeText.inputAccessoryView = toolBar
     }
     
-   @objc func dateChanged(datePicker: UIDatePicker){
+   @objc func dateChanged(datePicker: UIDatePicker) {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .short
-        dateFormatter.dateFormat = "MM/dd HH:mm"
-    
-    if startTimeText.isEditing {
+        dateFormatter.dateStyle = .long
+        dateFormatter.dateFormat = "MM.dd.EEEE HH:mm"
+    if let end = self.endTime {
+        let calendar = Calendar.current
+        let time = calendar.component(.hour, from: datePicker.date)
+        let time2 = calendar.component(.hour, from: end)
+        let min = calendar.component(.minute, from: datePicker.date)
+        let min2 = calendar.component(.minute, from: end)
+        
+        if startTimeText.isEditing {
+            if (time < time2) || (time == time2 && min < min2) {
+                startTime = datePicker.date
+                startTimeText.text = dateFormatter.string(from: datePicker.date)
+            }
+        }
+    } else {
         startTime = datePicker.date
         startTimeText.text = dateFormatter.string(from: datePicker.date)
-        
-        } else if endTimeText.isEditing {
-            endTime = datePicker.date
-            endTimeText.text = dateFormatter.string(from: datePicker.date)
+    }
+}
+    
+    @objc func dateMy(sender: UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .long
+        dateFormatter.dateFormat = "HH:mm"
+        if let start = self.startTime {
+            let calendar = Calendar.current
+            let time = calendar.component(.hour, from: sender.date)
+            let time2 = calendar.component(.hour, from: start)
+            let min = calendar.component(.minute, from: sender.date)
+            let min2 = calendar.component(.minute, from: start)
+            
+            if endTimeText.isEditing {
+                if (time > time2) || (time == time2 &&  min > min2) {
+                    endTime = sender.date
+                    endTimeText.text = dateFormatter.string(from: sender.date)
+                }
+                
+            }
+        } else {
+            endTime = sender.date
+            endTimeText.text = dateFormatter.string(from: sender.date)
         }
+        
     }
     
     @objc func doneClick() {
+//        if self.startTime == nil || self.endTime == nil {
+//            self.startTime = Date()
+//            self.endTime = Date()
+//            let dateFormatter = DateFormatter()
+//            guard let sTime = self.startTime, let eTime = self.endTime  else { return }
+//            let startText = dateFormatter.string(from: sTime)
+//            let endText = dateFormatter.string(from: eTime)
+//            self.startTimeText.text = startText
+//            self.endTimeText.text = endText
+//        }
+        
+        
         self.endEditing(true)
     }
     

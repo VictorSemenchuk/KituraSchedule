@@ -14,8 +14,8 @@ extension Date {
      Return day, month, year, weekday in specified formatted string
     */
     
-    public func dateComponents() -> (day: String, month: String, year: String, weekDay: String) {
-        var dayMonthYear:(day:String, month:String, year: String, weekDay: String)
+    public func dateComponents() -> (day: String, month: String, year: String, weekDay: String, longStyleDate: String, shortStyleTime: String) {
+        var dayMonthYear:(day:String, month:String, year: String, weekDay: String, longStyleDate: String, shortStyleTime: String)
         let dateFormatter = DateFormatter()
         //day
         dateFormatter.dateFormat = "d"
@@ -32,6 +32,14 @@ extension Date {
         //year
         dateFormatter.dateFormat = "YYY"
         dayMonthYear.year = dateFormatter.string(from: self)
+        
+        dateFormatter.dateStyle = .long
+        dateFormatter.dateFormat = "MM.dd.EEEE HH:mm"
+        dayMonthYear.longStyleDate = dateFormatter.string(from: self)
+        
+        dateFormatter.dateStyle = .long
+        dateFormatter.dateFormat = "HH:mm"
+        dayMonthYear.shortStyleTime = dateFormatter.string(from: self)
         
         return dayMonthYear
     }

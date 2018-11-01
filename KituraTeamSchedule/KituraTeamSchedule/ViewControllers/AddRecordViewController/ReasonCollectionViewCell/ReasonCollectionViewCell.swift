@@ -28,4 +28,13 @@ class ReasonCollectionViewCell: UICollectionViewCell {
         
         self.reasonTitleLabel.backgroundColor = UIColor.init(red: CGFloat(color.red), green: CGFloat(color.green), blue: CGFloat(color.blue), alpha: CGFloat(color.alpha))
     }
+    
+    func setAlphaComponentIfCellIsupdated(with passedRecord: Record?) {
+        if let validReason = passedRecord?.reason {
+            if self.reasonTitleLabel.text != validReason.title {
+                self.reasonTitleLabel.alpha = 0.2
+            }
+            print("ReasonLBL == \(self.reasonTitleLabel.text!) \(validReason.title)")
+        }
+    }
 }

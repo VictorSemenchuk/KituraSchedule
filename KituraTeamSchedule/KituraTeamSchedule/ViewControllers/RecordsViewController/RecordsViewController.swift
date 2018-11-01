@@ -26,11 +26,12 @@ class RecordsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-         self.generateDataSource()
+        self.generateDataSource()
     }
     
     override func viewDidLayoutSubviews() {
@@ -72,7 +73,5 @@ class RecordsViewController: UIViewController {
             }
         }
     }
-    
-    
     
 }

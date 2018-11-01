@@ -31,9 +31,12 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let recocrVC = RecordViewController()
         //W: throw record to this controller .record = fetched record
         tableView.deselectRow(at: indexPath, animated: true)
+        let record = self.dataSource[indexPath.row]
+        let recocdVC = RecordViewController.init(nibName: "AddRecordViewController", bundle: nil, record: record)
+        self.navigationController?.pushViewController(recocdVC, animated: true)
+//        self.present(recocdVC, animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -43,9 +46,10 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let record = self.dataSource[indexPath.row]
-            Service.removeRecord(record: record)
-            self.dataSource.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .left)
+            Service.removeRecord(record: record) {
+                self.dataSource.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .left)
+            }
         }
     }
     
