@@ -82,6 +82,7 @@ class KPIDateSetter:UIView {
         dateFormatter.dateStyle = .long
         dateFormatter.dateFormat = "MM.dd.EEEE HH:mm"
     if let end = self.endTime {
+        datePicker.setDate((self.startTime ?? Date()), animated: true)
         let calendar = Calendar.current
         let time = calendar.component(.hour, from: datePicker.date)
         let time2 = calendar.component(.hour, from: end)
@@ -92,6 +93,8 @@ class KPIDateSetter:UIView {
             if (time < time2) || (time == time2 && min < min2) {
                 startTime = datePicker.date
                 startTimeText.text = dateFormatter.string(from: datePicker.date)
+            } else {
+                datePicker.setDate((startTime ?? Date()), animated: true)
             }
         }
     } else {
@@ -105,6 +108,7 @@ class KPIDateSetter:UIView {
         dateFormatter.dateStyle = .long
         dateFormatter.dateFormat = "HH:mm"
         if let start = self.startTime {
+            sender.setDate((self.endTime ?? Date()), animated: true)
             let calendar = Calendar.current
             let time = calendar.component(.hour, from: sender.date)
             let time2 = calendar.component(.hour, from: start)
@@ -115,6 +119,8 @@ class KPIDateSetter:UIView {
                 if (time > time2) || (time == time2 &&  min > min2) {
                     endTime = sender.date
                     endTimeText.text = dateFormatter.string(from: sender.date)
+                } else {
+                    sender.setDate((endTime ?? Date()), animated: true)
                 }
                 
             }
@@ -126,18 +132,6 @@ class KPIDateSetter:UIView {
     }
     
     @objc func doneClick() {
-//        if self.startTime == nil || self.endTime == nil {
-//            self.startTime = Date()
-//            self.endTime = Date()
-//            let dateFormatter = DateFormatter()
-//            guard let sTime = self.startTime, let eTime = self.endTime  else { return }
-//            let startText = dateFormatter.string(from: sTime)
-//            let endText = dateFormatter.string(from: eTime)
-//            self.startTimeText.text = startText
-//            self.endTimeText.text = endText
-//        }
-        
-        
         self.endEditing(true)
     }
     

@@ -61,14 +61,14 @@ class RecordViewController: UIViewController {
                 self.record?.startDate = start
                 self.record?.endDate = end
                 self.record?.details = details
-            Service.updateRecord(record: self.record!) {
+            Service.updateRecord(record: self.record!) {error in
                 self.navigationController?.popViewController(animated: true)
             }
         } else if self.newRecord != nil {
             self.newRecord?.startDate = start
             self.newRecord?.endDate = end
             self.newRecord?.details = details
-            Service.addRecord(record: self.newRecord!) {
+            Service.addRecord(record: self.newRecord!) {error in
                 self.navigationController?.popViewController(animated: true)
             }
         }

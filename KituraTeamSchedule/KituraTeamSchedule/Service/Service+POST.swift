@@ -12,6 +12,8 @@ import KituraKit
 
 extension Service {
     
+    typealias Block = (_ error:RequestError?)->()
+    
     enum RecordAcions: String {
         case Add    = "/addrecord"
         case Update = "/updaterecord"
@@ -19,28 +21,28 @@ extension Service {
     }
     
     //ADD A RECORD
-    static func addRecord(record: Record, completion: @escaping () -> Void) {
+    static func addRecord(record: Record, completion: @escaping Block) {
         guard let client = KituraKit(baseURL: kKituraClientURL) else {
             print("Error creating KituraKit client")
             DispatchQueue.main.async {
-                completion()
+                completion(nil)
             }
             return
         }
         client.post(RecordAcions.Add.rawValue, data: record) { (insertedRecord: Record?, error: RequestError?) in
             print("Inserted")
             DispatchQueue.main.async {
-                completion()
+                completion(nil)
             }
         }
     }
     
     //UODATE A RECORD
-    static func updateRecord(record: Record, completion: @escaping () -> Void) {
+    static func updateRecord(record: Record, completion: @escaping Block) {
         guard let client = KituraKit(baseURL: kKituraClientURL) else {
             print("Error creating KituraKit client")
             DispatchQueue.main.async {
-                completion()
+                completion(nil)
             }
             return
         }
@@ -51,17 +53,17 @@ extension Service {
                 print("Updated")
             }
             DispatchQueue.main.async {
-                completion()
+                completion(error)
             }
         }
     }
     
     //REMOVE A RECORD
-    static func removeRecord(record: Record, completion: @escaping () -> Void) {
+    static func removeRecord(record: Record, completion: @escaping Block) {
         guard let client = KituraKit(baseURL: kKituraClientURL) else {
             print("Error creating KituraKit client")
             DispatchQueue.main.async {
-                completion()
+                completion(nil)
             }
             return
         }
@@ -72,7 +74,7 @@ extension Service {
                 print("Removed")
             }
             DispatchQueue.main.async {
-                completion()
+                completion(nil)
             }
         }
     }
