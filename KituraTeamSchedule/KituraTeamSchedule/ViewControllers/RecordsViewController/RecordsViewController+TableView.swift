@@ -16,12 +16,6 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kCellId, for: indexPath) as! RLTableViewCell
-        
-        //W: fetch records by kCurrentUserId
-//        guard let records = self.dataSource else {
-//            cell.record = fetchedRecord
-//        }
-
         return cell
     }
     
@@ -31,16 +25,29 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //W: throw record to this controller .record = fetched record
-        tableView.deselectRow(at: indexPath, animated: true)
-        let record = self.dataSource[indexPath.row]
-        let recocdVC = RecordViewController.init(nibName: "AddRecordViewController", bundle: nil, record: record)
-        self.navigationController?.pushViewController(recocdVC, animated: true)
-//        self.present(recocdVC, animated: true, completion: nil)
+        if let user = self.user, user.id != kCurrentUserId {
+            tableView.deselectRow(at: indexPath, animated: true)
+            return
+        } else {
+            tableView.deselectRow(at: indexPath, animated: true)
+            let record = self.dataSource[indexPath.row]
+            let recocdVC = RecordViewController.init(nibName: "AddRecordViewController", bundle: nil, record: record)
+            self.navigationController?.pushViewController(recocdVC, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 85.0
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        if let user = self.user, user.id == kCurrentUserId {
+            return true
+        } else if user == nil {
+            return true
+        } else  {
+            return false
+        }
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
