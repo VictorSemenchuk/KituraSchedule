@@ -21,7 +21,6 @@ class ReasonCollectionViewCell: UICollectionViewCell {
     
     func configureCellWithReason(reason:Reason) {
         self.reasonTitleLabel.text = reason.title
-        
         guard let color = reason.color else {
             return
         }

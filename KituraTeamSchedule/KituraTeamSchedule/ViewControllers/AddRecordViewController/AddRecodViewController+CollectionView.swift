@@ -68,6 +68,7 @@ extension RecordViewController: UICollectionViewDelegate, UICollectionViewDataSo
         
         cell?.reasonTitleLabel.alpha = 1
         self.record?.reason = reason
+        self.record?.reasonId = reason.reasonId
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -82,10 +83,6 @@ extension RecordViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-//        let insets = UIEdgeInsets(top: kCollectionViewTopBottomPadding,
-//                                  left: kMainLeftRightPadding,
-//                                  bottom: kCollectionViewTopBottomPadding,
-//                                  right: kMainLeftRightPadding)
         let insets = UIEdgeInsets(top: 0,
                                   left: 0,
                                   bottom: 0,

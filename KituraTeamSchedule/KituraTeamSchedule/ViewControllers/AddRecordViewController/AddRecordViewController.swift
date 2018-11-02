@@ -30,7 +30,7 @@ class RecordViewController: UIViewController {
         super.viewDidLoad()
         
         //record
-        self.record = Record.init(recordId: Int(arc4random_uniform(1000000)), userId:kCurrentUserId, startDate: dateSetterView.startTime ?? Date(), endDate: dateSetterView.endTime ?? Date(), reasonId: 0, details: "", reason: nil)
+        self.record = Record.init(recordId: Int(arc4random_uniform(100)), userId:kCurrentUserId, startDate: dateSetterView.startTime ?? Date(), endDate: dateSetterView.endTime ?? Date(), reasonId: 1, details: "", reason: nil)
         
         
         let rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(saveActionHandler))
@@ -45,11 +45,11 @@ class RecordViewController: UIViewController {
     
     @objc func saveActionHandler() {
         guard let record = self.record else {
-            
             return
         }
+        
         Service.addRecord(record: record)
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
