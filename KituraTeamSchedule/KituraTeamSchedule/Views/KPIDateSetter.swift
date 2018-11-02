@@ -82,7 +82,6 @@ class KPIDateSetter:UIView {
         dateFormatter.dateStyle = .long
         dateFormatter.dateFormat = "MM.dd.EEEE HH:mm"
     if let end = self.endTime {
-        datePicker.setDate((self.startTime ?? Date()), animated: true)
         let calendar = Calendar.current
         let time = calendar.component(.hour, from: datePicker.date)
         let time2 = calendar.component(.hour, from: end)
@@ -94,7 +93,7 @@ class KPIDateSetter:UIView {
                 startTime = datePicker.date
                 startTimeText.text = dateFormatter.string(from: datePicker.date)
             } else {
-                datePicker.setDate((startTime ?? Date()), animated: true)
+                if let startT = self.startTime { datePicker.setDate(startT, animated: true) }
             }
         }
     } else {
@@ -108,7 +107,6 @@ class KPIDateSetter:UIView {
         dateFormatter.dateStyle = .long
         dateFormatter.dateFormat = "HH:mm"
         if let start = self.startTime {
-            sender.setDate((self.endTime ?? Date()), animated: true)
             let calendar = Calendar.current
             let time = calendar.component(.hour, from: sender.date)
             let time2 = calendar.component(.hour, from: start)
@@ -120,7 +118,7 @@ class KPIDateSetter:UIView {
                     endTime = sender.date
                     endTimeText.text = dateFormatter.string(from: sender.date)
                 } else {
-                    sender.setDate((endTime ?? Date()), animated: true)
+                    if let endT = self.endTime { sender.setDate(endT, animated: true) }
                 }
                 
             }
